@@ -1,9 +1,10 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
   return (
-    <section className="max-w-7xl mx-auto py-20 ">
-      <div className="mx-auto px-6 mb-12">
+    <section className="max-w-7xl mx-auto px-8 pt-20 ">
+      <div className="mx-auto mb-12">
         {/* Badge */}
         <div className="inline-flex items-center space-x-2 border-b border-accent-500/50 rounded-full px-4 py-1 mb-6">
           <span className="font-kiona! text-blue-100 text-sm uppercase tracking-widest">
@@ -17,16 +18,22 @@ const About = () => {
         </h2>
       </div>
       <div className="flex gap-16">
-        <div className="">
-          Logoooooooooooooooooooooooooooooooooooooooooooooooooooo
-          ooooooooooooooooooooooo
-        </div>
-        <div className="max-w-2xl font-kiona! text-purple-100 text-md leading-loose tracking-wide">
+        <div className="max-w-2xl font-kiona! text-purple-100 text-sm md:text-md leading-loose tracking-wide">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt
           pariatur dolores autem saepe, debitis aspernatur ab voluptate
           explicabo recusandae ipsum quibusdam quidem dignissimos veritatis ea
           sint cupiditate similique deserunt suscipit at praesentium, vero
           perspiciatis dolorum mollitia. Ex eum eligendi doloribus?
+        </div>
+        <div className="hidden md:flex min-w-xl justify-center items-center">
+          <Image
+            src="/images/E-SUMMIT-05.png"
+            alt="Hero Image"
+            width={400}
+            height={200}
+            objectFit="cover"
+            className="w-xs h-auto"
+          />
         </div>
       </div>
     </section>

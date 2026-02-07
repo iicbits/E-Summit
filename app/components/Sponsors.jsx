@@ -21,7 +21,9 @@ const sponsors = [
 
 const SponsorSection = () => {
   return (
-    <section className="py-24 px-6 font-sans overflow-hidden">
+    <section className="py-24 px-6 relative font-sans overflow-hidden">
+      <div className="absolute -z-10 top-0 left-1/4 w-96 h-96 bg-accent-400/10 rounded-full blur-[120px]"></div>
+      <div className="absolute -z-10 bottom-0 right-1/4 w-96 h-96 bg-purple-600/10 rounded-full blur-[120px]"></div>
       <div className="max-w-7xl mx-auto">
         {/* Header Section */}
         <div className="mx-auto px-6 mb-12">

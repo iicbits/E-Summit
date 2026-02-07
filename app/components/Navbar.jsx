@@ -7,15 +7,14 @@ import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("");
+  const [activeItem, setActiveItem] = useState("none");
 
   const navItems = [
     { name: "Events", href: "/Events" },
-    { name: "Speakers", href: "/Speakers" },
-    { name: "Sponsors", href: "/Sponsors" },
-    { name: "Workshops", href: "/Workshops" },
+    { name: "Speakers", href: "/" },
+    { name: "Sponsors", href: "/" },
+    { name: "Workshops", href: "/" },
     { name: "Team", href: "/Team" },
-    { name: "Contact Us", href: "/Contact" },
   ];
 
   const pathname = usePathname();
@@ -40,8 +39,8 @@ const Navbar = () => {
           <Image
             src="/images/E-SUMMIT-06.png"
             alt="Logo"
-            width={160}
-            height={160}
+            width={180}
+            height={180}
             className="w-36 md:w-auto h-auto"
           />
         </div>
@@ -66,13 +65,13 @@ const Navbar = () => {
         <div className="flex gap-4">
           {/* Desktop Contact Button */}
           <Link
-            href="/Registration-form"
+            href="/"
             className={`hidden md:block px-4 py-2 border-2 border-accent-500 rounded-xl text-sm transition-colors duration-300 hover:bg-accent-100/20`}
           >
-            Join Us
+            Tickets
           </Link>
           <Link
-            href="/Contact"
+            href="/"
             className={`hidden md:block px-4 py-2 border-2 border-accent-500 rounded-xl text-sm transition-colors duration-300 text-white -bg-conic-240 bg-accent-500 hover:bg-accent-500`}
           >
             Contact
@@ -125,14 +124,14 @@ const Navbar = () => {
             ))}
             <div className="flex gap-2 mt-4">
               <Link
-                href="/Registration-form"
+                href="/"
                 onClick={() => setIsMenuOpen(false)}
                 className={`px-4 py-2 border border-accent-700 rounded-xl text-sm text-center transition-colors duration-300 hover:bg-accent-100/20`}
               >
-                Join Us
+                Tickets
               </Link>
               <Link
-                href="/Contact"
+                href="/"
                 onClick={() => setIsMenuOpen(false)}
                 className={`px-4 py-2 border border-accent-700 rounded-xl text-sm text-center transition-colors duration-300 text-white bg-accent-600 hover:bg-accent-500`}
               >
