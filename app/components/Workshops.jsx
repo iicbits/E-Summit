@@ -2,48 +2,70 @@
 
 const workshops = [
   {
-    title: "Startups Workshop",
-    provider: "XYZ",
-    description:
-      "This workshop helps early-stage and growing startups learn how to build, scale, and optimize products using XYZ.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    title: "UDAAN UG Fellowship Program 2025",
+    provider: "Impact Highlights",
+    description: (
+      <>
+        The UDAAN UG Fellowship Program 2025 empowered undergraduate innovators
+        through funded, research-driven projects aligned with real-world
+        challenges. <strong>17 shortlisted students</strong> presented their
+        ideas, with <strong>10 fellows selected</strong> for structured
+        mentorship and <strong>₹1,00,000 funding per fellow</strong>. The
+        program strengthened research, prototyping, and deployment-focused
+        innovation at BIT Sindri.
+      </>
+    ),
+    logo: "/images/udaan.png", // replace with actual logo if available
   },
   {
-    title: "Startups Workshop",
-    provider: "XYZ",
-    description:
-      "This workshop helps early-stage and growing startups learn how to build, scale, and optimize products using XYZ.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    title: "IDEA TRIBE 2025",
+    provider: "Impact Highlights",
+    description: (
+      <>
+        IDEA TRIBE 2025 was a multi-stage idea pitching initiative promoting
+        tribal entrepreneurship and grassroots innovation across Jharkhand. The
+        program engaged <strong>126+ teams</strong>, with{" "}
+        <strong>30 finalists</strong> at the state level.{" "}
+        <strong>Three BIT Sindri teams secured ₹2,00,000+ in seed funding</strong>,
+        presenting community-driven solutions in sustainability, healthcare,
+        livelihood, and mining waste innovation.
+      </>
+    ),
+    logo: "/images/ideatribe.png",
   },
   {
-    title: "Startups Workshop",
-    provider: "XYZ",
-    description:
-      "This workshop helps early-stage and growing startups learn how to build, scale, and optimize products using XYZ.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    title: "TEXcelerate 2025",
+    provider: "Impact Highlights",
+    description: (
+      <>
+        TEXcelerate 2025 was an on-campus idea pitching and innovation
+        challenge that brought together teams to present industry-oriented
+        solutions. <strong>Two teams received seed funding of ₹2,00,000</strong>,
+        along with mentorship, pre-incubation support, and expert guidance. The
+        program focused on Mining 4.0, Cyber-Physical Systems, sustainability,
+        and deployment-ready innovation at BIT Sindri.
+      </>
+    ),
+    logo: "/images/texcelerate.png",
   },
   {
-    title: "Startups Workshop",
-    provider: "XYZ",
-    description:
-      "This workshop helps early-stage and growing startups learn how to build, scale, and optimize products using XYZ.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-  },
-  {
-    title: "Startups Workshop",
-    provider: "XYZ",
-    description:
-      "This workshop helps early-stage and growing startups learn how to build, scale, and optimize products using XYZ.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
-  },
-  {
-    title: "Startups Workshop",
-    provider: "XYZ",
-    description:
-      "This workshop helps early-stage and growing startups learn how to build, scale, and optimize products using XYZ.",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg",
+    title: "INNOVATHON 2025",
+    provider: "Highlights",
+    description: (
+      <>
+        INNOVATHON 2025 was a 36-hour national-level hackathon where students
+        built practical, industry-oriented solutions for real-world challenges.
+        Participants worked across AI/ML, automation, smart manufacturing, and
+        open innovation, developing functional prototypes under expert
+        mentorship. The top three teams were awarded cash prizes of{" "}
+        <strong>₹15,000</strong>, <strong>₹10,000</strong>, and{" "}
+        <strong>₹5,000</strong>.
+      </>
+    ),
+    logo: "/images/innovathon.png",
   },
 ];
+
 
 const WorkshopCard = ({ workshop }) => (
   <div

@@ -10,39 +10,102 @@ const eventCategories = ["All", "Competitions", "Workshops", "Networking"];
 const events = [
   {
     id: 1,
-    title: "Ideathon 2026",
+    title: "INNOVATHON 3.0",
     category: "Competitions",
     date: "Feb 6th",
-    time: "10:00 AM",
-    venue: "A26, Admin Building",
-    description:
-      "Pitch your disruptive ideas to a panel of venture capitalists and industry experts for a chance to win from a ₹5 Lakh prize pool.",
+    time: "09:00 AM",
+    venue: "BIT Sindri Campus",
+    description: `INNOVATHON 3.0 is a 36-hour innovation hackathon where participants build real-world technology solutions through hands-on problem-solving and rapid prototyping.
+
+Highlights:
+• Software, AI/ML, hardware & automation challenges
+• Mentorship from faculty and experts
+• Working prototypes & live demonstrations
+• Certificates and recognition`,
     image: "/images/hero.png",
-    isFeatured: true,
   },
   {
     id: 2,
-    title: "Startup Expo",
-    category: "Networking",
-    date: "Feb 7th",
+    title: "TEXcelerate 2026",
+    category: "Competitions",
+    date: "Feb 6th",
     time: "11:00 AM",
-    venue: "A26, Admin Building",
-    description:
-      "Showcase your product to thousands of attendees and connect with potential investors.",
+    venue: "BIT Sindri Campus",
+    description: `TEXcelerate 2026 is a flagship idea pitching and innovation challenge focused on scalable, industry-relevant solutions in Mining 4.0 and Cyber-Physical Systems.
+
+Highlights:
+• High-impact idea validation
+• Seed funding up to ₹2,00,000
+• Industry & academic mentorship
+• Pre-incubation opportunities`,
     image: "/images/hero.png",
   },
   {
     id: 3,
-    title: "The Unicorn Talk",
-    category: "Workshops",
+    title: "UDAAN UG Fellowship",
+    category: "Competitions",
+    date: "Feb 7th",
+    time: "10:00 AM",
+    venue: "BIT Sindri Campus",
+    description: `UDAAN UG Fellowship supports undergraduate students in long-term, research-driven innovation aligned with national and industrial priorities.
+
+Highlights:
+• ₹10,000/month fellowship
+• Structured mentorship
+• Research & deployment focus
+• Certificate of completion`,
+    image: "/images/hero.png",
+  },
+  {
+    id: 4,
+    title: "Technology Development Program (TDP)",
+    category: "Competitions",
+    date: "Feb 7th",
+    time: "01:00 PM",
+    venue: "BIT Sindri Campus",
+    description: `Technology Development Program (TDP) supports faculty-led applied research to convert laboratory innovations into deployment-ready technologies.
+
+Highlights:
+• Grants up to ₹15 Lakhs
+• Industry-aligned research
+• CPS CoE ecosystem access
+• Commercialization pathways`,
+    image: "/images/hero.png",
+  },
+  {
+    id: 5,
+    title: "Being an Entrepreneur",
+    category: "Competitions",
     date: "Feb 8th",
-    time: "04:00 PM",
-    venue: "A26, Admin Building",
-    description:
-      "Join the founder of India's newest unicorn as they share their journey from a dorm room to a billion-dollar valuation. Join the founder of India's newest unicorn as they share their journey from a dorm room to a billion-dollar valuation.",
+    time: "10:00 AM",
+    venue: "BIT Sindri Campus",
+    description: `Being an Entrepreneur is a case-based competition focused on real-world business decision-making and strategy.
+
+Highlights:
+• Practical business cases
+• Founder-level thinking
+• Boardroom-style pitching
+• Expert Q&A sessions`,
+    image: "/images/hero.png",
+  },
+  {
+    id: 6,
+    title: "Equity Minds",
+    category: "Networking",
+    date: "Feb 8th",
+    time: "03:00 PM",
+    venue: "BIT Sindri Campus",
+    description: `Equity Minds is a virtual investment simulation where participants think and decide like angel investors and venture capitalists.
+
+Highlights:
+• Startup evaluation & valuation
+• Virtual capital allocation
+• Strategy & risk assessment
+• Expert jury interaction`,
     image: "/images/hero.png",
   },
 ];
+
 
 const EventCard = ({ event }) => (
   <div className="group relative bg-[#160021] border border-white/5 rounded-xl overflow-hidden hover:border-accent-500/50 transition-all duration-500">
@@ -113,15 +176,18 @@ const page = () => {
         <div className="absolute inset-0 bg-linear-to-t from-[#0c0014] via-transparent to-transparent"></div>
 
         <div className="relative z-10 text-center max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">
-            THE{" "}
-            <span className="text-transparent bg-clip-text bg-linear-to-t from-accent-600 via-accent-400 to-accent-400">
-              LINEUP
-            </span>
-          </h1>
+          <div className="relative z-10 text-center max-w-4xl">
+  <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">
+    EVENTS
+    <span className="block text-transparent bg-clip-text bg-linear-to-t from-accent-600 via-accent-400 to-accent-400">
+      AT E-SUMMIT ’26
+    </span>
+  </h1>
+</div>
+
           <p className="text-gray-300 font-kiona text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto">
-            Explore three days of high-octane competitions, inspiring talks, and
-            networking opportunities at E-Summit '26.
+            Discover a dynamic lineup of innovation challenges, workshops, and competitions designed to spark ideas, test skills, and turn ambition into action.
+
           </p>
         </div>
       </section>

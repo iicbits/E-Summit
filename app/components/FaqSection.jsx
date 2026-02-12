@@ -4,31 +4,62 @@ import React, { useState } from "react";
 
 const faqs = [
   {
-    question: "How can I register for E-Summit?",
+    question: "How can I register for E-Summit 2026?",
     answer:
-      "You can register for E-Summit by visiting our official website and following the registration process. Ensure you provide accurate details to complete your registration successfully.",
+      "You can register through the official E-Summit website by clicking on the Register button available on the homepage or event pages. Follow the steps and complete the form to confirm your participation.",
   },
   {
     question: "Will E-Summit be held in person or virtually?",
     answer:
-      "E-Summit 2026 is scheduled to be an in-person event held at the BIT Sindri campus, providing full networking opportunities.",
+      "E-Summit 2026 will be conducted in offline (in-person) mode at BIT Sindri. Any virtual sessions, if applicable, will be communicated separately.",
   },
   {
     question: "What kind of speakers will be at E-Summit?",
     answer:
-      "We host a diverse range of speakers including unicorn founders, venture capitalists, industry leaders, and renowned educators.",
+      "E-Summit will feature startup founders, industry leaders, investors, domain experts, and academic professionals who bring real-world insights and practical experience in entrepreneurship and innovation.",
   },
   {
     question: "Who can attend E-Summit 2026?",
     answer:
-      "Students, budding entrepreneurs, professionals, and anyone interested in the startup ecosystem is welcome to attend.",
+      "E-Summit 2026 is open to students from all disciplines, aspiring entrepreneurs, innovators, and anyone interested in startups, technology, and business.",
   },
   {
     question: "Do I need prior startup experience to participate?",
     answer:
-      "No prior experience is required. E-Summit is designed to inspire and educate individuals at all stages of their entrepreneurial journey.",
+      "No. Prior startup experience is not required. E-Summit is designed for beginners as well as experienced participants who want to learn, explore, and grow.",
+  },
+  {
+    question: "Is there any registration fee for E-Summit?",
+    answer:
+      "Registration details, including fees (if any), will be mentioned clearly on the registration page for each event.",
+  },
+  {
+    question: "Can I participate in more than one event?",
+    answer:
+      "Yes, participants may register for multiple events, provided the event schedules do not overlap.",
+  },
+  {
+    question: "Will participants receive certificates?",
+    answer:
+      "Yes, participation and merit certificates will be provided for selected events as per event guidelines.",
+  },
+  {
+    question: "Are team-based events available at E-Summit?",
+    answer:
+      "Yes, E-Summit includes both individual and team-based events. Team size and rules will be specified in the respective event details.",
+  },
+  {
+    question: "How will I receive event updates and announcements?",
+    answer:
+      "All updates will be shared through registered email IDs and official E-Summit social media channels.",
+  },
+  {
+    question: "Who can I contact for queries or support?",
+    answer:
+      "For any queries, you can reach out through the Contact Us section on the website or email the organizing team at the official E-Summit email ID.",
   },
 ];
+
 
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -50,8 +81,8 @@ const FaqSection = () => {
               <span className="text-accent-400">Questions</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-md leading-relaxed">
-              Explore our most frequently addressed questions. We've compiled
-              essential information for your convenience.
+             Quick answers to common queries about E-Summit 2026, registrations, events, and participation.
+
             </p>
           </div>
 
@@ -60,7 +91,7 @@ const FaqSection = () => {
             <div className="relative bg-accent-900/10 backdrop-blur-2xl border border-accent-900/50 p-8 rounded-2xl space-y-6">
               <h3 className="text-xl font-bold">Still have a Question?</h3>
               <p className="text-gray-400 text-sm">
-                We're here to assist you with any additional queries.
+                Reach out to us anytime - we’re happy to help
               </p>
               <button className="px-8 py-3 font-kiona! bg-accent-300/20 backdrop-blur-lg border border-accent-800/50 text-white text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300 cursor-pointer">
                 Ask a Question
