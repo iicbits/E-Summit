@@ -3,20 +3,18 @@
 const sponsors = [
   {
     tier: "Title Sponsor",
-    name: "Google Cloud",
-    logo: "/api/placeholder/200/80",
+    name: "BITSANA",
+    logo: "/Bitsana.png",
   },
   {
-    tier: "Platinum Sponsor",
-    name: "Microsoft",
-    logo: "/api/placeholder/180/70",
+    tier: "Event Sponsor",
+    name: "MG Seating Systems",
+    logo: "/mg.jpg",
   },
-  { tier: "Gold Sponsor", name: "Adobe", logo: "/api/placeholder/150/60" },
-  { tier: "Associate Sponsor", name: "Intel", logo: "/api/placeholder/150/60" },
-  { tier: "Gold Sponsor", name: "Adobe", logo: "/api/placeholder/150/60" },
-  { tier: "Associate Sponsor", name: "Intel", logo: "/api/placeholder/150/60" },
-  { tier: "Gold Sponsor", name: "Adobe", logo: "/api/placeholder/150/60" },
-  { tier: "Associate Sponsor", name: "Intel", logo: "/api/placeholder/150/60" },
+  { tier: "Platform Partner", name: "Hack2Skill", logo: "/hack2skill.png" },
+  { tier: "Official IoT's Partner", name: "Robotree", logo: "/robotree.png" },
+  { tier: "Official Banking Partner", name: "HDFC Bank", logo: "/hdfc.svg" },
+  { tier: "Official Fooding Partner", name: "Haldiram's", logo: "/haldi.png" },
 ];
 
 const SponsorSection = () => {
