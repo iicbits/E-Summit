@@ -3,20 +3,18 @@
 const sponsors = [
   {
     tier: "Title Sponsor",
-    name: "Google Cloud",
-    logo: "/api/placeholder/200/80",
+    name: "BITSANA",
+    logo: "/Bitsaana.jpg",
   },
   {
-    tier: "Platinum Sponsor",
-    name: "Microsoft",
-    logo: "/api/placeholder/180/70",
+    tier: "Event Sponsor",
+    name: "MG Seating Systems",
+    logo: "/mg.jpg",
   },
-  { tier: "Gold Sponsor", name: "Adobe", logo: "/api/placeholder/150/60" },
-  { tier: "Associate Sponsor", name: "Intel", logo: "/api/placeholder/150/60" },
-  { tier: "Gold Sponsor", name: "Adobe", logo: "/api/placeholder/150/60" },
-  { tier: "Associate Sponsor", name: "Intel", logo: "/api/placeholder/150/60" },
-  { tier: "Gold Sponsor", name: "Adobe", logo: "/api/placeholder/150/60" },
-  { tier: "Associate Sponsor", name: "Intel", logo: "/api/placeholder/150/60" },
+  { tier: "Platform Partner", name: "Hack2Skill", logo: "/hack2skill.jpg" },
+  { tier: "Official IoT's Partner", name: "Robotree", logo: "/robotree.png" },
+  { tier: "Official Banking Partner", name: "HDFC Bank", logo: "/hdfc.svg" },
+  { tier: "Official Fooding Partner", name: "Haldiram's", logo: "/haldi.png" },
 ];
 
 const SponsorSection = () => {
@@ -70,7 +68,7 @@ const SponsorSection = () => {
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className="h-10 object-contain brightness-0 invert opacity-50 group-hover:opacity-100 transition-all duration-500 scale-95 group-hover:scale-100"
+                className="h-10 object-contain opacity-50 group-hover:opacity-100 transition-all duration-500 scale-95 group-hover:scale-100"
               />
             </div>
           ))}

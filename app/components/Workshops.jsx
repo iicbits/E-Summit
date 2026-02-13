@@ -15,7 +15,7 @@ const workshops = [
         innovation at BIT Sindri.
       </>
     ),
-    logo: "/images/udaan.png", // replace with actual logo if available
+    logo: "/udaan.png", // replace with actual logo if available
   },
   {
     title: "IDEA TRIBE 2025",
@@ -46,7 +46,7 @@ const workshops = [
         and deployment-ready innovation at BIT Sindri.
       </>
     ),
-    logo: "/images/texcelerate.png",
+    logo: "/texcelerate.png",
   },
   {
     title: "INNOVATHON 2025",
