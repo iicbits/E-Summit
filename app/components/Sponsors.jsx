@@ -4,14 +4,14 @@ const sponsors = [
   {
     tier: "Title Sponsor",
     name: "BITSANA",
-    logo: "/Bitsana.png",
+    logo: "/Bitsana.jpg",
   },
   {
     tier: "Event Sponsor",
     name: "MG Seating Systems",
     logo: "/mg.jpg",
   },
-  { tier: "Platform Partner", name: "Hack2Skill", logo: "/hack2skill.png" },
+  { tier: "Platform Partner", name: "Hack2Skill", logo: "/hack2skill.jpg" },
   { tier: "Official IoT's Partner", name: "Robotree", logo: "/robotree.png" },
   { tier: "Official Banking Partner", name: "HDFC Bank", logo: "/hdfc.svg" },
   { tier: "Official Fooding Partner", name: "Haldiram's", logo: "/haldi.png" },
@@ -68,7 +68,7 @@ const SponsorSection = () => {
               <img
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className="h-10 object-contain brightness-0 invert opacity-50 group-hover:opacity-100 transition-all duration-500 scale-95 group-hover:scale-100"
+                className="h-10 object-contain opacity-50 group-hover:opacity-100 transition-all duration-500 scale-95 group-hover:scale-100"
               />
             </div>
           ))}
