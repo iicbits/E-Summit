@@ -317,7 +317,7 @@ const coordinators = [
     name: "Maitri",
     role: "Operations",
     image: "/images/maitri.png",
-    socials: { linkedin: "https://www.linkedin.com/in/maitri-89a17732a", instagram: "https://www.instagram.com/maitri__232?igsh=YnplY3lydG0zdzRr", mail: "mailto:singhmaitri233@gmail.com" },
+    socials: { linkedin: "", instagram: "#", mail: "mailto:singhmaitri233@gmail.com" },
   }
 ];
 

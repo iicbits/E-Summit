@@ -4,35 +4,77 @@ import React from "react";
 
 const speakers = [
   {
-    name: "S. Maheshwari",
-    role: "CEO",
-    company: "NEWTON SCHOOL",
-    img: "/images/myphoto.png",
+    name: "Prof. Ramjee Prasad",
+    role: "Founder & President",
+    company: "CMICT, Denmark",
+    img: "/images/ramjee-prasad.png",
   },
   {
-    name: "S. Maheshwari",
-    role: "CEO",
-    company: "NEWTON SCHOOL",
-    img: "/images/myphoto.png",
+    name: "Mr. S.N. Sharma",
+    role: "Venture Capitalist & Industrialist",
+    company: "USA",
+    img: "/images/sn-sharma.png"
   },
   {
-    name: "S. Maheshwari",
-    role: "CEO",
-    company: "NEWTON SCHOOL",
-    img: "/images/myphoto.png",
+    name: "Mr. Amrendu Prakash",
+    role: "Director In-charge",
+    company: "BSL, Bokaro",
+    img: "/images/A.Praksh.png",
   },
   {
-    name: "S. Maheshwari",
-    role: "CEO",
-    company: "NEWTON SCHOOL",
-    img: "/images/myphoto.png",
+    name: "Mr. S.K. Verma",
+    role: "DC",
+    company: "MECON, Ranchi",
+    img: "/images/SK-Verma.png",
   },
   {
-    name: "S. Maheshwari",
-    role: "CEO",
-    company: "NEWTON SCHOOL",
-    img: "/images/myphoto.png",
+    name: "Mr. R.N. Singh",
+    role: "Chairman",
+    company: "DVC, Kolkata",
+    img: "/images/R.N.Singh.png",
   },
+  {
+    name: "Dr. Gautam Sinha",
+    role: "Ex-Director",
+    company: "IIM Kashipur",
+    img: "/images/Gautam-Sinha.png",
+  },
+  {
+    name: "Prof. Anders Frederiksen",
+    role: "Professor",
+    company: "Aarhus University, Denmark",
+    img: "/images/anders-frederiksen.png"
+  },
+  {
+    name: "Prof. Neeli R. Prasad",
+    role: "Serial Entrepreneur",
+    company: "USA",
+    img: "/images/neeli-prasad.png"
+  },
+  {
+    name: "Rohit Tripathi",
+    role: "Founder",
+    company: "Ranchi Mall",
+    img: "/images/rohit-tripathi.png"
+},
+{
+    name: "Prof. Dheeraj Kumar",
+    role: "Deputy Director",
+    company: "IIT (ISM) Dhanbad",
+    img: "/images/dheeraj-kumar.png"
+},
+{
+    name: "Mr. N.K. Mehta",
+    role: "Founder & CEO",
+    company: "Secure Network, Chennai",
+    img: "/images/nk-mehta.png"
+ },
+ {
+    name: "Prof. Santosh Anumalli",
+    role: "Entrepreneur & Professor",
+    company: "JNCASR, Bangalore",
+    img: "/images/santosh-anumalli.png"
+ }
 ];
 
 const SpeakerCard = ({ speaker }) => (
