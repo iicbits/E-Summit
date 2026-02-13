@@ -57,7 +57,7 @@ Highlights:
   },
   {
     id: 4,
-    title: "Technology Development Program (TDP)",
+    title: "Technology Development Program",
     category: "Competitions",
     date: "Feb 7th",
     time: "01:00 PM",
@@ -174,6 +174,7 @@ const page = () => {
           <Image
             src="/images/event-hero.webp"
             alt="Event Background"
+            priority
             fill
             className="object-cover"
           />

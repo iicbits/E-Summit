@@ -28,6 +28,7 @@ const Hero = () => {
         <Image
           src="/images/hero.webp"
           alt="Hero Image"
+          priority
           width={1600}
           height={900}
           className="w-full h-screen md:h-fit"

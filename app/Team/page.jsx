@@ -707,6 +707,7 @@ export default function Page() {
           <Image
             src="/images/team-hero.webp"
             alt="Team Background"
+            priority
             fill
             className="object-cover"
           />

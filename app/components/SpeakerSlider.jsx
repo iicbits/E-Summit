@@ -14,7 +14,7 @@ const speakers = [
     name: "Prof. Ramjee Prasad",
     role: "Founder & President",
     company: "CMICT, Denmark",
-    img: "/images/ramjee-prasad.png",
+    img: "/images/Ramjee-Prasad.png",
   },
   {
     name: "Mr. S.N. Sharma",
@@ -38,7 +38,7 @@ const speakers = [
     name: "Mr. R.N. Singh",
     role: "Chairman",
     company: "DVC, Kolkata",
-    img: "/images/R.N.Singh.png",
+    img: "/images/R.N.singh.png",
   },
   {
     name: "Dr. Gautam Sinha",
