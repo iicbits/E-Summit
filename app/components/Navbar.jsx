@@ -7,13 +7,12 @@ import React, { useEffect, useState } from "react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activeItem, setActiveItem] = useState("none");
+  const [activeItem, setActiveItem] = useState("");
 
   const navItems = [
     { name: "Events", href: "/Events" },
-    { name: "Speakers", href: "/" },
-    { name: "Sponsors", href: "/" },
-    { name: "Workshops", href: "/" },
+    { name: "Speakers", href: "/Speakers" },
+    { name: "Sponsors", href: "/Sponsors" },
     { name: "Team", href: "/Team" },
   ];
 
@@ -36,13 +35,15 @@ const Navbar = () => {
     <header className="absolute w-full font-kiona! z-50 md:py-4 ">
       <div className="pr-8 md:px-16 flex justify-between items-center relative">
         <div className="flex items-center justify-center py-4">
-          <Image
-            src="/images/E-SUMMIT-06.png"
-            alt="Logo"
-            width={180}
-            height={180}
-            className="w-36 md:w-52 h-auto"
-          />
+          <Link href="/">
+            <Image
+              src="/images/E-SUMMIT-06.png"
+              alt="Logo"
+              width={180}
+              height={180}
+              className="w-36 md:w-52 h-auto"
+            />
+          </Link>
         </div>
 
         {/* Desktop Navigation */}

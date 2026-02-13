@@ -8,21 +8,21 @@ const faqs = [
     answer:
       "You can register through the official E-Summit website by clicking on the Register button available on the homepage or event pages. Follow the steps and complete the form to confirm your participation.",
   },
-  {
-    question: "Will E-Summit be held in person or virtually?",
-    answer:
-      "E-Summit 2026 will be conducted in offline (in-person) mode at BIT Sindri. Any virtual sessions, if applicable, will be communicated separately.",
-  },
+  // {
+  //   question: "Will E-Summit be held in person or virtually?",
+  //   answer:
+  //     "E-Summit 2026 will be conducted in offline (in-person) mode at BIT Sindri. Any virtual sessions, if applicable, will be communicated separately.",
+  // },
   {
     question: "What kind of speakers will be at E-Summit?",
     answer:
       "E-Summit will feature startup founders, industry leaders, investors, domain experts, and academic professionals who bring real-world insights and practical experience in entrepreneurship and innovation.",
   },
-  {
-    question: "Who can attend E-Summit 2026?",
-    answer:
-      "E-Summit 2026 is open to students from all disciplines, aspiring entrepreneurs, innovators, and anyone interested in startups, technology, and business.",
-  },
+  // {
+  //   question: "Who can attend E-Summit 2026?",
+  //   answer:
+  //     "E-Summit 2026 is open to students from all disciplines, aspiring entrepreneurs, innovators, and anyone interested in startups, technology, and business.",
+  // },
   {
     question: "Do I need prior startup experience to participate?",
     answer:
@@ -43,11 +43,11 @@ const faqs = [
     answer:
       "Yes, participation and merit certificates will be provided for selected events as per event guidelines.",
   },
-  {
-    question: "Are team-based events available at E-Summit?",
-    answer:
-      "Yes, E-Summit includes both individual and team-based events. Team size and rules will be specified in the respective event details.",
-  },
+  // {
+  //   question: "Are team-based events available at E-Summit?",
+  //   answer:
+  //     "Yes, E-Summit includes both individual and team-based events. Team size and rules will be specified in the respective event details.",
+  // },
   {
     question: "How will I receive event updates and announcements?",
     answer:
@@ -56,10 +56,9 @@ const faqs = [
   {
     question: "Who can I contact for queries or support?",
     answer:
-      "For any queries, you can reach out through the Contact Us section on the website or email the organizing team at the official E-Summit email ID.",
+      "For any queries, you can reach out through the Contact Us section or email the organizing team at the official email ID.",
   },
 ];
-
 
 const FaqSection = () => {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -81,8 +80,8 @@ const FaqSection = () => {
               <span className="text-accent-400">Questions</span>
             </h2>
             <p className="text-gray-400 text-lg max-w-md leading-relaxed">
-             Quick answers to common queries about E-Summit 2026, registrations, events, and participation.
-
+              Quick answers to common queries about E-Summit 2026,
+              registrations, events, and participation.
             </p>
           </div>
 
@@ -93,9 +92,14 @@ const FaqSection = () => {
               <p className="text-gray-400 text-sm">
                 Reach out to us anytime - we’re happy to help
               </p>
-              <button className="px-8 py-3 font-kiona! bg-accent-300/20 backdrop-blur-lg border border-accent-800/50 text-white text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300 cursor-pointer">
-                Ask a Question
-              </button>
+              <a
+                href="mailto:iic@bitsindri.ac.in"
+                className="text-gray-300 hover:text-white transition-colors text-sm"
+              >
+                <button className="px-8 py-3 font-kiona! bg-accent-300/20 backdrop-blur-lg border border-accent-800/50 text-white text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300 cursor-pointer">
+                  Ask a Question
+                </button>
+              </a>
             </div>
           </div>
         </div>

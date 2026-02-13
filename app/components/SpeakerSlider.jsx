@@ -1,8 +1,15 @@
 "use client";
 
+import Image from "next/image";
 import React from "react";
 
 const speakers = [
+  {
+    name: "Prof. Anders Frederiksen",
+    role: "Professor",
+    company: "Aarhus University, Denmark",
+    img: "/images/anders-frederiksen.png",
+  },
   {
     name: "Prof. Ramjee Prasad",
     role: "Founder & President",
@@ -13,7 +20,7 @@ const speakers = [
     name: "Mr. S.N. Sharma",
     role: "Venture Capitalist & Industrialist",
     company: "USA",
-    img: "/images/sn-sharma.png"
+    img: "/images/sn-sharma.png",
   },
   {
     name: "Mr. Amrendu Prakash",
@@ -40,57 +47,55 @@ const speakers = [
     img: "/images/Gautam-Sinha.png",
   },
   {
-    name: "Prof. Anders Frederiksen",
-    role: "Professor",
-    company: "Aarhus University, Denmark",
-    img: "/images/anders-frederiksen.png"
-  },
-  {
     name: "Prof. Neeli R. Prasad",
     role: "Serial Entrepreneur",
     company: "USA",
-    img: "/images/neeli-prasad.png"
+    img: "/images/neeli-prasad.png",
   },
   {
     name: "Rohit Tripathi",
     role: "Founder",
     company: "Ranchi Mall",
-    img: "/images/rohit-tripathi.png"
-},
-{
+    img: "/images/rohit-tripathi.png",
+  },
+  {
     name: "Prof. Dheeraj Kumar",
     role: "Deputy Director",
     company: "IIT (ISM) Dhanbad",
-    img: "/images/dheeraj-kumar.png"
-},
-{
+    img: "/images/dheeraj-kumar.png",
+  },
+  {
     name: "Mr. N.K. Mehta",
     role: "Founder & CEO",
     company: "Secure Network, Chennai",
-    img: "/images/nk-mehta.png"
- },
- {
+    img: "/images/nk-mehta.png",
+  },
+  {
     name: "Prof. Santosh Anumalli",
     role: "Entrepreneur & Professor",
     company: "JNCASR, Bangalore",
-    img: "/images/santosh-anumalli.png"
- }
+    img: "/images/santosh-anumalli.png",
+  },
 ];
 
 const SpeakerCard = ({ speaker }) => (
-  <div className="shrink-0 w-64 md:w-72 rounded-3xl overflow-hidden shadow-xl border border-accent-400/30">
-    <div className="h-80 w-full overflow-hidden">
-      <img
+  <div className="shrink-0 w-64 h-fit md:w-72 rounded-3xl overflow-hidden shadow-xl border border-accent-400/30">
+    <div className="relative h-80 w-full overflow-hidden">
+      <Image
         src={speaker.img}
         alt={speaker.name}
-        className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500"
+        fill
+        className="w-full h-full object-cover mix-blend-luminosity hover:mix-blend-normal transition-all duration-500 z-0"
       />
+      {/* Bottom Gradient */}
+      <div className="absolute h-full w-full bg-linear-to-t from-[#160021] via-transparent to-transparent z-10" />
     </div>
-    <div className="p-4 font-kiona! bg-linear-to-t from-accent-900 to-transparent text-center">
+
+    <div className="p-4 h-full bg-linear-to-t from-[#430062] to-[#160021] text-center">
       <h3 className="text-white font-bold text-lg">{speaker.name}</h3>
-      <p className="text-blue-100 text-xs mt-1">
+      <p className="text-blue-100 text-sm mt-1">
         {speaker.role} ,{" "}
-        <span className="font-black uppercase">{speaker.company}</span>
+        <span className="font-semibold uppercase">{speaker.company}</span>
       </p>
     </div>
   </div>

@@ -16,13 +16,12 @@ const events = [
     time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description: `INNOVATHON 3.0 is a 36-hour innovation hackathon where participants build real-world technology solutions through hands-on problem-solving and rapid prototyping.
-
-Highlights:
-• Software, AI/ML, hardware & automation challenges
-• Mentorship from faculty and experts
-• Working prototypes & live demonstrations
-• Certificates and recognition`,
-    image: "/images/hero.png",
+    Highlights:
+      • Software, AI/ML, hardware & automation challenges
+      • Mentorship from faculty and experts
+      • Working prototypes & live demonstrations
+      • Certificates and recognition`,
+    image: "/images/hero.webp",
   },
   {
     id: 2,
@@ -38,7 +37,7 @@ Highlights:
 • Seed funding up to ₹2,00,000
 • Industry & academic mentorship
 • Pre-incubation opportunities`,
-    image: "/images/hero.png",
+    image: "/images/hero.webp",
   },
   {
     id: 3,
@@ -54,7 +53,7 @@ Highlights:
 • Structured mentorship
 • Research & deployment focus
 • Certificate of completion`,
-    image: "/images/hero.png",
+    image: "/images/hero.webp",
   },
   {
     id: 4,
@@ -70,7 +69,7 @@ Highlights:
 • Industry-aligned research
 • CPS CoE ecosystem access
 • Commercialization pathways`,
-    image: "/images/hero.png",
+    image: "/images/hero.webp",
   },
   {
     id: 5,
@@ -86,7 +85,7 @@ Highlights:
 • Founder-level thinking
 • Boardroom-style pitching
 • Expert Q&A sessions`,
-    image: "/images/hero.png",
+    image: "/images/hero.webp",
   },
   {
     id: 6,
@@ -102,10 +101,9 @@ Highlights:
 • Virtual capital allocation
 • Strategy & risk assessment
 • Expert jury interaction`,
-    image: "/images/hero.png",
+    image: "/images/hero.webp",
   },
 ];
-
 
 const EventCard = ({ event }) => (
   <div className="group relative bg-[#160021] border border-white/5 rounded-xl overflow-hidden hover:border-accent-500/50 transition-all duration-500">
@@ -169,25 +167,33 @@ const page = () => {
     filter === "All" ? events : events.filter((e) => e.category === filter);
 
   return (
-    <div className="min-h-screen text-white font-sans pb-20">
+    <div className="min-h-screen text-white pb-20">
       {/* Hero Section */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden px-6">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1492684223066-81342ee5ff30?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center opacity-30"></div>
+      <section className="relative h-[70vh] flex items-center justify-center overflow-hidden px-6 pt-20">
+        <div className="absolute inset-0 bg-cover opacity-30">
+          <Image
+            src="/images/event-hero.webp"
+            alt="Event Background"
+            fill
+            className="object-cover"
+          />
+        </div>
         <div className="absolute inset-0 bg-linear-to-t from-[#0c0014] via-transparent to-transparent"></div>
 
         <div className="relative z-10 text-center max-w-4xl">
           <div className="relative z-10 text-center max-w-4xl">
-  <h1 className="text-5xl md:text-7xl font-black tracking-tighter mb-6">
-    EVENTS
-    <span className="block text-transparent bg-clip-text bg-linear-to-t from-accent-600 via-accent-400 to-accent-400">
-      AT E-SUMMIT ’26
-    </span>
-  </h1>
-</div>
+            <h1 className="text-5xl md:text-7xl font-bold tracking-wide mb-6 flex items-center justify-center">
+              THE
+              <span className="block text-transparent bg-clip-text bg-linear-to-t from-accent-600 via-accent-400 to-accent-400 ml-6">
+                LINEUP
+              </span>
+            </h1>
+          </div>
 
-          <p className="text-gray-300 font-kiona text-sm md:text-base font-light tracking-wide max-w-2xl mx-auto">
-            Discover a dynamic lineup of innovation challenges, workshops, and competitions designed to spark ideas, test skills, and turn ambition into action.
-
+          <p className="text-gray-300 font-kiona text-xs md:text-base font-light tracking-wide max-w-2xl mx-auto">
+            Discover a dynamic lineup of innovation challenges, workshops, and
+            competitions designed to spark ideas, test skills, and turn ambition
+            into action.
           </p>
         </div>
       </section>
@@ -223,7 +229,7 @@ const page = () => {
         {filteredEvents.length === 0 && (
           <div className="text-center py-20">
             <p className="text-gray-500 text-xl italic">
-              No events found in this category.
+              Stay tuned! Events will be revealed soon :)
             </p>
           </div>
         )}

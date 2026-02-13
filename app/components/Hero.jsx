@@ -9,29 +9,27 @@ const Hero = () => {
           alt="Hero Image"
           width={400}
           height={200}
-          objectFit="cover"
           className="w-4xl h-auto"
         />
 
         <div className="mt-4 text-center">
-          <h4 className="font-bold text-3xl backdrop-blur-2xl">
+          <h4 className="font-bold md:hidden text-2xl backdrop-blur-2xl mb-6">
             13th - 15th March
           </h4>
-          <p className="text-gray-500 text-sm mt-10 mb-6">
+          {/* <p className="text-gray-500 text-sm mt-10 mb-6">
             Want to partner with North India's largest fest?
-          </p>
-          <button className="px-8 py-3 font-kiona! bg-accent-300/40 backdrop-blur-lg border border-accent-800/50 text-accent-800 text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300">
+          </p> */}
+          <button className="px-6 py-2 md:px-8 md:py-3 font-kiona! bg-accent-300/40 backdrop-blur-lg border border-accent-800/50 text-accent-800 text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300">
             Download Brochure
           </button>
         </div>
       </div>
       <div className="">
         <Image
-          src="/images/hero.png"
+          src="/images/hero.webp"
           alt="Hero Image"
           width={1600}
           height={900}
-          objectFit="cover"
           className="w-full h-screen md:h-fit"
         />
       </div>

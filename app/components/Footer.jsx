@@ -10,25 +10,40 @@ const Footer = () => {
           {/* Column 1: Branding & Description */}
           <div className="space-y-6">
             <div className="flex items-center space-x-4">
-              {/* Replace with actual <img> tags for logos */}
               <div className="h-12 w-auto flex items-center">
-                <Image
-                  src="/images/E-SUMMIT-06.png"
-                  alt="Logo"
-                  width={160}
-                  height={160}
-                  className="w-36 md:w-auto h-auto"
-                />
+                <a href="/" alt="E-Summit">
+                  <Image
+                    src="/images/E-SUMMIT-06.png"
+                    alt="Logo"
+                    width={160}
+                    height={160}
+                    className="w-36 md:w-auto h-auto"
+                  />
+                </a>
               </div>
               <div className="h-8 w-px bg-gray-400"></div>
-              <div className="h-12 w-auto flex items-center">
-                <span className="text-xl font-semibold">E-Cell</span>
+              <div className="h-8 w-auto flex items-center">
+                <a
+                  href="https://iic.bitsindri.ac.in/"
+                  alt="IIC BIT Sindri"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    src="/images/IIC logo.png"
+                    alt="Logo"
+                    width={160}
+                    height={160}
+                    className="w-24 md:w-28 h-auto"
+                  />
+                </a>
               </div>
             </div>
 
             <p className="text-gray-300 text-sm leading-relaxed max-w-sm">
               E-Summit BIT Sindri is an entrepreneurial fest, organized by the
-              Entrepreneurship Cell to inspire and empower future leaders.
+              Institution's Innovation Council cum E-Cell, BIT Sindri to inspire
+              and empower future leaders.
             </p>
 
             <div className="pt-4">
@@ -46,46 +61,50 @@ const Footer = () => {
           </div>
 
           {/* Column 2: Explore Links */}
-          <div className="md:pl-20">
+          <div className="md:pl-40">
             <h4 className="font-bold text-sm uppercase tracking-wider mb-6">
               Explore
             </h4>
             <ul className="space-y-3 text-sm text-gray-300">
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a href="/" className="hover:text-white transition-colors">
                   HOME
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/Events"
+                  className="hover:text-white transition-colors"
+                >
                   EVENTS
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/Speakers"
+                  className="hover:text-white transition-colors"
+                >
                   SPEAKERS
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
+                <a
+                  href="/Sponsors"
+                  className="hover:text-white transition-colors"
+                >
                   SPONSORS
                 </a>
               </li>
               <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  TESTIMONIALS
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:text-white transition-colors">
-                  FAQ
+                <a href="/Team" className="hover:text-white transition-colors">
+                  TEAM
                 </a>
               </li>
             </ul>
           </div>
 
           {/* Column 3: Contact */}
-          <div className="md:text-right">
+          <div className="">
             <h4 className="font-bold text-sm uppercase tracking-wider mb-6">
               Contact Us
             </h4>
