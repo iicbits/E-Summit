@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 const workshops = [
   {
     title: "UDAAN UG Fellowship Program 2025",
@@ -15,7 +17,7 @@ const workshops = [
         innovation at BIT Sindri.
       </>
     ),
-    logo: "/udaan.png", // replace with actual logo if available
+    logo: "/images/udaan.jpeg", // replace with actual logo if available
   },
   {
     title: "IDEA TRIBE 2025",
@@ -26,27 +28,29 @@ const workshops = [
         tribal entrepreneurship and grassroots innovation across Jharkhand. The
         program engaged <strong>126+ teams</strong>, with{" "}
         <strong>30 finalists</strong> at the state level.{" "}
-        <strong>Three BIT Sindri teams secured ₹2,00,000+ in seed funding</strong>,
-        presenting community-driven solutions in sustainability, healthcare,
+        <strong>
+          Three BIT Sindri teams secured ₹2,00,000+ in seed funding
+        </strong>
+        , presenting community-driven solutions in sustainability, healthcare,
         livelihood, and mining waste innovation.
       </>
     ),
-    logo: "/images/ideatribe.png",
+    logo: "/images/hero.webp",
   },
   {
     title: "TEXcelerate 2025",
     provider: "Impact Highlights",
     description: (
       <>
-        TEXcelerate 2025 was an on-campus idea pitching and innovation
-        challenge that brought together teams to present industry-oriented
-        solutions. <strong>Two teams received seed funding of ₹2,00,000</strong>,
-        along with mentorship, pre-incubation support, and expert guidance. The
+        TEXcelerate 2025 was an on-campus idea pitching and innovation challenge
+        that brought together teams to present industry-oriented solutions.{" "}
+        <strong>Two teams received seed funding of ₹2,00,000</strong>, along
+        with mentorship, pre-incubation support, and expert guidance. The
         program focused on Mining 4.0, Cyber-Physical Systems, sustainability,
         and deployment-ready innovation at BIT Sindri.
       </>
     ),
-    logo: "/texcelerate.png",
+    logo: "/images/Texcelerate.jpeg",
   },
   {
     title: "INNOVATHON 2025",
@@ -62,10 +66,9 @@ const workshops = [
         <strong>₹5,000</strong>.
       </>
     ),
-    logo: "/images/innovathon.png",
+    logo: "/images/hero.webp",
   },
 ];
-
 
 const WorkshopCard = ({ workshop }) => (
   <div
@@ -73,11 +76,13 @@ const WorkshopCard = ({ workshop }) => (
   >
     <div className="bg-[#160021] rounded-2xl p-6 h-full border border-white/10 group-hover:border-accent-500/50 transition-colors">
       {/* Logo Container */}
-      <div className="bg-white rounded-xl p-4 flex items-center justify-center h-28 mb-6">
-        <img
+      <div className="rounded-xl h-40 w-full overflow-hidden mb-6">
+        <Image
           src={workshop.logo}
           alt={workshop.provider}
-          className="max-h-full max-w-[80%] object-contain"
+          width={160}
+          height={160}
+          className="w-full h-full object-cover"
         />
       </div>
 

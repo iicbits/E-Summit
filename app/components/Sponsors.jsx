@@ -1,20 +1,38 @@
 "use client";
 
+import Image from "next/image";
+
 const sponsors = [
   {
     tier: "Title Sponsor",
     name: "BITSANA",
-    logo: "/Bitsaana.jpg",
+    logo: "/images/Bitsaana.jpg",
   },
   {
     tier: "Event Sponsor",
     name: "MG Seating Systems",
-    logo: "/mg.jpg",
+    logo: "/images/mg.jpg",
   },
-  { tier: "Platform Partner", name: "Hack2Skill", logo: "/hack2skill.jpg" },
-  { tier: "Official IoT's Partner", name: "Robotree", logo: "/robotree.png" },
-  { tier: "Official Banking Partner", name: "HDFC Bank", logo: "/hdfc.svg" },
-  { tier: "Official Fooding Partner", name: "Haldiram's", logo: "/haldi.png" },
+  {
+    tier: "Platform Partner",
+    name: "Hack2Skill",
+    logo: "/images/hack2skill.jpg",
+  },
+  {
+    tier: "Official IoT's Partner",
+    name: "Robotree",
+    logo: "/images/robotree.png",
+  },
+  {
+    tier: "Official Banking Partner",
+    name: "HDFC Bank",
+    logo: "/images/hdfc.svg",
+  },
+  {
+    tier: "Official Fooding Partner",
+    name: "Haldiram's",
+    logo: "/images/haldi.png",
+  },
 ];
 
 const SponsorSection = () => {
@@ -65,10 +83,12 @@ const SponsorSection = () => {
               <span className="text-[9px] font-bold tracking-widest text-gray-500 uppercase mb-4">
                 {sponsor.tier}
               </span>
-              <img
+              <Image
                 src={sponsor.logo}
                 alt={sponsor.name}
-                className="h-10 object-contain opacity-50 group-hover:opacity-100 transition-all duration-500 scale-95 group-hover:scale-100"
+                width={160}
+                height={160}
+                className="h-20 object-contain transition-all duration-500 scale-95 group-hover:scale-100"
               />
             </div>
           ))}
