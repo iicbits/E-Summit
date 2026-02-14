@@ -1,15 +1,3 @@
-// Don't remove this metadata
-export const metadata = {
-  title: "Our Partners & Sponsors",
-  description:
-    "Meet the industry giants and startup ecosystem enablers supporting E-Summit '26 at BIT Sindri. Explore our title, platinum, and gold sponsors.",
-  openGraph: {
-    title: "Corporate Partners | E-Summit '26 BIT Sindri",
-    description:
-      "Connecting academia with industry leaders through strategic partnerships.",
-  },
-};
-
 const page = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden ">

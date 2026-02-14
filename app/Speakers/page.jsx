@@ -1,15 +1,3 @@
-// Don't remove this metadata
-export const metadata = {
-  title: "Distinguished Speakers",
-  description:
-    "Learn from unicorn founders, venture capitalists, and BIT Sindri's notable alumni. Join us for keynote sessions that redefine the entrepreneurial paradigm.",
-  keywords: [
-    "BIT Sindri notable alumni",
-    "E-Summit speakers",
-    "Entrepreneurship keynotes India",
-  ],
-};
-
 const Reveal = () => {
   return (
     <div className="relative min-h-screen flex items-center justify-center px-6 overflow-hidden ">

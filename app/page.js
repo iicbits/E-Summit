@@ -6,18 +6,6 @@ import FaqSection from "./components/FaqSection";
 import StatsSection from "./components/Stats";
 import Workshops from "./components/Workshops";
 
-export const metadata = {
-  title:
-    "E-Summit '26 | BIT Sindri - North India's Industrial Entrepreneurship Summit",
-  description:
-    "Join the flagship entrepreneurship summit of BIT Sindri. Experience a convergence of innovation, leadership, and startup culture in the heart of Dhanbad.",
-  openGraph: {
-    title: "E-Summit '26 | BIT Sindri",
-    description:
-      "Empowering the next generation of innovators at BIT Sindri. Register now for the biggest startup event in Jharkhand.",
-  },
-};
-
 export default function Home() {
   return (
     <div className="">
