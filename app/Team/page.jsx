@@ -71,7 +71,7 @@ const facultyMembers = [
 const executiveMembers = [
   {
     name: "Syed Adnan Ahmad",
-    role: "Chief Coordinator",
+    role: " President",
     image: "/team/syedd.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/syedadnan03/",
@@ -81,7 +81,7 @@ const executiveMembers = [
   },
   {
     name: "Vivek Tiwari",
-    role: "Vice Chief Coordinator",
+    role: "Vice President",
     image: "/team/vivek_sir.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/vivek-tiwari-b929a822b/",
@@ -91,7 +91,7 @@ const executiveMembers = [
   },
   {
     name: "Manohar Jha",
-    role: "Secretary",
+    role: "Treasurer",
     image: "/team/manoharr.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/manoharjhaa/",
@@ -102,8 +102,8 @@ const executiveMembers = [
   },
   {
     name: "Harsh Bhargav",
-    role: "Technical Head",
-    image: "/team/Harsh.png",
+    role: "Technical Secretary",
+    image: "/team/harsh.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
       instagram: "https://iic.bitsindri.ac.in/Team",
@@ -112,7 +112,7 @@ const executiveMembers = [
   },
   {
     name: "Amit Kumar Mishra",
-    role: "Design Head",
+    role: "General Secretary",
     image: "/team/amit.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
@@ -122,7 +122,7 @@ const executiveMembers = [
   },
   {
     name: "Kashish Jain",
-    role: "Innovation Head",
+    role: "Operations Executive",
     image: "/team/kashish_mam.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256/",
@@ -132,7 +132,7 @@ const executiveMembers = [
   },
   {
     name: "Tisha Aggarwal",
-    role: "Community Engagement",
+    role: "Joint Secretary",
     image: "/team/tisha.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
@@ -200,7 +200,7 @@ const associateMembers = [
   {
     name: "Shivangi Kumari",
     role: "Innovation Program",
-    image: "/team/shivangi.png",
+    image: "/team/Shivangi.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/shivangi-kumari-67b927287/",
       instagram:
@@ -599,7 +599,7 @@ const coordinators = [
   {
     name: "Maitri",
     role: "Operations",
-    image: "/team/maitri.png",
+    image: "/team/Maitri.png",
     socials: {
       linkedin: "",
       instagram: "#",

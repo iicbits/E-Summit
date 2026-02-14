@@ -66,7 +66,7 @@ const workshops = [
         <strong>₹5,000</strong>.
       </>
     ),
-    logo: "/images/hero.webp",
+    logo: "/images/innovathon25.png",
   },
 ];
 
