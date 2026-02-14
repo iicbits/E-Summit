@@ -8,63 +8,63 @@ const facultyMembers = [
   {
     name: "Prof. Pankaj Rai",
     role: "Chairman IIC",
-    image: "/images/pankajrai.webp",
+    image: "/team/pankajrai.webp",
   },
   {
     name: "Prof. Prakash Kumar",
     role: "President IIC",
-    image: "/images/prakash.jpg",
+    image: "/team/prakash.jpg",
   },
   {
     name: "Dr. S C Dutta",
     role: "Vice President IIC",
-    image: "/images/sc.webp",
+    image: "/team/sc.webp",
   },
-  { name: "Dr. Rahul Kumar", role: "Convener", image: "/images/rahul.webp" },
+  { name: "Dr. Rahul Kumar", role: "Convener", image: "/team/rahul.webp" },
   {
     name: "Dr. Mukesh Chandra",
     role: "Innovation Activity Coordinator",
-    image: "/images/mukesh.webp",
+    image: "/team/mukesh.webp",
   },
   {
     name: "Mr. Khustar Ansari",
     role: "Hackathon Coordinator",
-    image: "/images/khustar.webp",
+    image: "/team/khustar.webp",
   },
   {
     name: "Mr. Vijay Besra",
     role: "ARIIA Coordinator",
-    image: "/images/vijay.webp",
+    image: "/team/vijay.webp",
   },
   {
     name: "Dr. Kashif Hasan Kazmi",
     role: "Internal Event Coordinator",
-    image: "/images/kashif.webp",
+    image: "/team/kashif.webp",
   },
   {
     name: "Sarah Kumala",
     role: "VP of Customer Success",
-    image: "/images/fac.webp",
+    image: "/team/fac.webp",
   },
   {
     name: "Mr. Sanjay Oraon",
     role: "IPR Activity Coordinator",
-    image: "/images/sanjay.webp",
+    image: "/team/sanjay.webp",
   },
   {
     name: "Dr. Priyanka Kumari",
     role: "NIRF Coordinator",
-    image: "/images/mam.webp",
+    image: "/team/mam.webp",
   },
   {
     name: "Dr. Abhijeet Anand",
     role: "Internship Coordinator",
-    image: "/images/abhijit.webp",
+    image: "/team/abhijit.webp",
   },
   {
     name: "Mr. Roshan Shankar",
     role: "Research & Development Coordinator",
-    image: "/images/roshan.webp",
+    image: "/team/roshan.webp",
   },
 ];
 
@@ -72,7 +72,7 @@ const executiveMembers = [
   {
     name: "Syed Adnan Ahmad",
     role: "Chief Coordinator",
-    image: "/images/syedd.png",
+    image: "/team/syedd.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/syedadnan03/",
       instagram: "https://www.instagram.com/s.addy_3/",
@@ -82,7 +82,7 @@ const executiveMembers = [
   {
     name: "Vivek Tiwari",
     role: "Vice Chief Coordinator",
-    image: "/images/vivek_sir.png",
+    image: "/team/vivek_sir.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/vivek-tiwari-b929a822b/",
       instagram: "https://www.instagram.com/_vivek_tiwarii/",
@@ -92,7 +92,7 @@ const executiveMembers = [
   {
     name: "Manohar Jha",
     role: "Secretary",
-    image: "/images/manoharr.png",
+    image: "/team/manoharr.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/manoharjhaa/",
       instagram:
@@ -103,7 +103,7 @@ const executiveMembers = [
   {
     name: "Harsh Bhargav",
     role: "Technical Head",
-    image: "/images/Harsh.png",
+    image: "/team/Harsh.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
       instagram: "https://iic.bitsindri.ac.in/Team",
@@ -113,7 +113,7 @@ const executiveMembers = [
   {
     name: "Amit Kumar Mishra",
     role: "Design Head",
-    image: "/images/amit.png",
+    image: "/team/amit.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
       instagram: "https://iic.bitsindri.ac.in/Team",
@@ -123,7 +123,7 @@ const executiveMembers = [
   {
     name: "Kashish Jain",
     role: "Innovation Head",
-    image: "/images/kashish_mam.png",
+    image: "/team/kashish_mam.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256/",
       instagram: "https://www.instagram.com/kashish_7029",
@@ -133,7 +133,7 @@ const executiveMembers = [
   {
     name: "Tisha Aggarwal",
     role: "Community Engagement",
-    image: "/images/tisha.png",
+    image: "/team/tisha.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
       instagram: "https://iic.bitsindri.ac.in/Team",
@@ -146,7 +146,7 @@ const associateMembers = [
   {
     name: "Adarsh Kumar",
     role: "Technicals",
-    image: "/images/adarsh.png",
+    image: "/team/adarsh.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/adarsh-kumar-03a459200",
       instagram:
@@ -157,7 +157,7 @@ const associateMembers = [
   {
     name: "Utsav Jha",
     role: "Operations",
-    image: "/images/utsav.png",
+    image: "/team/utsav.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/utsav-jha-021009211",
       instagram:
@@ -168,7 +168,7 @@ const associateMembers = [
   {
     name: "Rahul Kumar",
     role: "Community Engagement",
-    image: "/images/rahul.png",
+    image: "/team/rahul.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/rahul-kumar-98b607290?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -180,7 +180,7 @@ const associateMembers = [
   {
     name: "Dhruv Gupta",
     role: "Design",
-    image: "/images/dhruv.png",
+    image: "/team/dhruv.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/dhruv-gupta-a70346292",
       instagram: "https://www.instagram.com/_0xdhruv?igsh=MXA4bWszMWIxYTdmbQ==",
@@ -190,7 +190,7 @@ const associateMembers = [
   {
     name: "Kunal Kumar Sonkar",
     role: "Startup & Incubation",
-    image: "/images/kunal.png",
+    image: "/team/kunal.png",
     socials: {
       linkedin: "https://www.linkedin.com/kunal-sonkar-bits",
       instagram: "https://www.instagram.com/oye_kunaaal?igsh=MzV2eDR2emUzamt4",
@@ -200,7 +200,7 @@ const associateMembers = [
   {
     name: "Shivangi Kumari",
     role: "Innovation Program",
-    image: "/images/shivangi.png",
+    image: "/team/shivangi.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/shivangi-kumari-67b927287/",
       instagram:
@@ -211,7 +211,7 @@ const associateMembers = [
   {
     name: "Shreya Pandey",
     role: "Marketing",
-    image: "/images/shreya.png",
+    image: "/team/shreya.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/shreya-p-55b909219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -223,7 +223,7 @@ const associateMembers = [
   {
     name: "Ayush Bhagat",
     role: "Finance",
-    image: "/images/ayush.png",
+    image: "/team/ayush.png",
     socials: {
       linkedin: "www.linkedin.com/in/ ayush-k-bhagat",
       instagram: "https://www.instagram.com/ayush_26373?igsh=NTNmZmZzbTI0anE2",
@@ -233,7 +233,7 @@ const associateMembers = [
   {
     name: "Aastha Agarwal",
     role: "Research & Development",
-    image: "/images/aastha.png",
+    image: "/team/aastha.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/aastha-agarwal-043883294",
       instagram: "https://www.instagram.com/aastha28._",
@@ -243,7 +243,7 @@ const associateMembers = [
   {
     name: "Aman Kumar Arya",
     role: "Editorial",
-    image: "/images/aman_arya.png",
+    image: "/team/aman_arya.png",
     socials: {
       linkedin: "www.linkedin.com/in/aman-arya-b8458b2b4",
       instagram: "https://www.instagram.com/amanarya7968/",
@@ -253,7 +253,7 @@ const associateMembers = [
   {
     name: "Shashi Kumar",
     role: "Media",
-    image: "/images/shashii.png",
+    image: "/team/shashii.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/shashi-kumar-60b0b3325?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -268,7 +268,7 @@ const coordinators = [
   {
     name: "Krrish Raj",
     role: "Community Engagement",
-    image: "/images/krrish.png",
+    image: "/team/krrish.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/krrish-raj-333926335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -279,7 +279,7 @@ const coordinators = [
   {
     name: "Samir Kumar",
     role: "Finance",
-    image: "/images/samir.png",
+    image: "/team/samir.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/samir-kumar-650520305?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -291,7 +291,7 @@ const coordinators = [
   {
     name: "Ravi kant",
     role: "Design",
-    image: "/images/ravikant.png",
+    image: "/team/ravikant.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/ravi-kant-b1612b356?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -302,7 +302,7 @@ const coordinators = [
   {
     name: "Praveen Kumar Chaurasiya",
     role: "Editorial",
-    image: "/images/pravin.png",
+    image: "/team/pravin.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/praveen-kumar-chaurasiya-a4abb7333/",
@@ -313,7 +313,7 @@ const coordinators = [
   {
     name: "Bibek Kumar",
     role: "Technicals",
-    image: "/images/bibek.png",
+    image: "/team/bibek.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/bibek-kumbhakar?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -325,7 +325,7 @@ const coordinators = [
   {
     name: "Abhas Kumar",
     role: "Startup & Incubation",
-    image: "/images/abhas.png",
+    image: "/team/abhas.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/abhas-kumar-bardhan-74b13132a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -336,7 +336,7 @@ const coordinators = [
   {
     name: "Prajjwal Jha",
     role: "Media",
-    image: "/images/prajjwal.png",
+    image: "/team/prajjwal.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/prajjwal-jha-98476133b",
       instagram: "https://www.instagram.com/prajjwalx9",
@@ -346,7 +346,7 @@ const coordinators = [
   {
     name: "Rakesh Kumar Pandey",
     role: "Marketing",
-    image: "/images/rakesh.png",
+    image: "/team/rakesh.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/rakesh-pandey-493b7435b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
@@ -358,7 +358,7 @@ const coordinators = [
   {
     name: "Shashank Gupta",
     role: "Operations",
-    image: "/images/shashank.png",
+    image: "/team/shashank.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/shashank-gupta-230489338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -370,7 +370,7 @@ const coordinators = [
   {
     name: "Rimsha",
     role: "Finance",
-    image: "/images/rimsha.png",
+    image: "/team/rimsha.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/rimsha-taslim-5a8724336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -381,7 +381,7 @@ const coordinators = [
   {
     name: "Tanishq Raj",
     role: "Editorial",
-    image: "/images/tanishq.png",
+    image: "/team/tanishq.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/tanishq-raj58",
       instagram: "https://www.instagram.com/tanishkraj58",
@@ -391,7 +391,7 @@ const coordinators = [
   {
     name: "Anish Kumar",
     role: "Operations",
-    image: "/images/anish.png",
+    image: "/team/anish.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/anish-kumar-29a9a2336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -403,7 +403,7 @@ const coordinators = [
   {
     name: "Prakhar Pratyush Jha",
     role: "Media",
-    image: "/images/prakhar.png",
+    image: "/team/prakhar.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/prakhar-pratyush-jha911?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -415,7 +415,7 @@ const coordinators = [
   {
     name: "Aradhana Sharma",
     role: "Technicals",
-    image: "/images/aradhna.png",
+    image: "/team/aradhna.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/aradhana-sharma-b486a7358?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -427,7 +427,7 @@ const coordinators = [
   {
     name: "Varsha Rani",
     role: "Community Engagement",
-    image: "/images/varsha.png",
+    image: "/team/varsha.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/varsha-rani-a33078294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -439,7 +439,7 @@ const coordinators = [
   {
     name: "Vatsal Krishna",
     role: "Design",
-    image: "/images/vatsal.png",
+    image: "/team/vatsal.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/vatsal-krishna-890093359?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -451,7 +451,7 @@ const coordinators = [
   {
     name: "Diptanshu Jaiswal",
     role: "Marketing",
-    image: "/images/diptanshu.png",
+    image: "/team/diptanshu.png",
     socials: {
       linkedin: "http://linkedin.com/in/diptanshu-jaiswal-b765b421b",
       instagram:
@@ -462,7 +462,7 @@ const coordinators = [
   {
     name: "Pratiush Chourasia",
     role: "Research & Development",
-    image: "/images/pratuish.png",
+    image: "/team/pratuish.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/pratiush-chourasia-95a510229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -473,7 +473,7 @@ const coordinators = [
   {
     name: "Dipak Kumar Ram",
     role: "Media",
-    image: "/images/dipak.png",
+    image: "/team/dipak.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/deepak-chandrawanshi-a22631337?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -485,7 +485,7 @@ const coordinators = [
   {
     name: "Shital Sandhya",
     role: "Marketing",
-    image: "/images/shital.png",
+    image: "/team/shital.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/shital-sandhya-b83085320?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -496,7 +496,7 @@ const coordinators = [
   {
     name: "Megha",
     role: "Startup & Incubation",
-    image: "/images/megha.png",
+    image: "/team/megha.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/megha-s-708717338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -508,7 +508,7 @@ const coordinators = [
   {
     name: "Kajal",
     role: "Innovation Program",
-    image: "/images/kajal.png",
+    image: "/team/kajal.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/kajal-kumari-687a78322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -520,7 +520,7 @@ const coordinators = [
   {
     name: "Ankit Kumar",
     role: "Innovation Program",
-    image: "/images/ankit.png",
+    image: "/team/ankit.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/akprofilelink",
       instagram: "https://www.instagram.com/_ankit.kr___",
@@ -530,7 +530,7 @@ const coordinators = [
   {
     name: "Vineet Verma",
     role: "Startup & Incubation",
-    image: "/images/vineet.png",
+    image: "/team/vineet.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/vineet-verma-b81a0a361?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -542,7 +542,7 @@ const coordinators = [
   {
     name: "Shivam Kumar Singh",
     role: "Research & Development",
-    image: "/images/shivam.png",
+    image: "/team/shivam.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/shivam-singh-343222366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -554,7 +554,7 @@ const coordinators = [
   {
     name: "Parth Kumar",
     role: "Marketing",
-    image: "/images/parth.png",
+    image: "/team/parth.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/parth-kumar-b023a836a",
       instagram: "https://www.instagram.com/itsparth_557",
@@ -564,7 +564,7 @@ const coordinators = [
   {
     name: "Abhijeet Kumar Chauhan",
     role: "Design",
-    image: "/images/abhijeet.png",
+    image: "/team/abhijeet.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/abhijeet-chouhan?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -576,7 +576,7 @@ const coordinators = [
   {
     name: "Sudhir Verma",
     role: "Community Engagement",
-    image: "/images/sudhir.png",
+    image: "/team/sudhir.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/sudhir-kumar-verma-681793354?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -587,7 +587,7 @@ const coordinators = [
   {
     name: "Piyush Dwivedi",
     role: "Technicals",
-    image: "/images/piyush.png",
+    image: "/team/piyush.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/piyush-dwivedi-679319272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -599,7 +599,7 @@ const coordinators = [
   {
     name: "Maitri",
     role: "Operations",
-    image: "/images/maitri.png",
+    image: "/team/maitri.png",
     socials: {
       linkedin: "",
       instagram: "#",
