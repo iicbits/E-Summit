@@ -30,7 +30,7 @@ const events = [
     description:
       "TEXcelerate 2026 is a flagship idea pitching and innovation challenge focused on scalable industry solutions.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/TEXcelerate.docx",
+    detailsLink: "/DOCS/texcelerate.docx",
     registerLink: "https://example.com/register-texcelerate",
   },
   {

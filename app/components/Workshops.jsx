@@ -35,7 +35,7 @@ const workshops = [
         livelihood, and mining waste innovation.
       </>
     ),
-    logo: "/images/hero.webp",
+    logo: "/images/ideatribe.webp",
   },
   {
     title: "TEXcelerate 2025",
