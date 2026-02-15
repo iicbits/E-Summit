@@ -90,6 +90,16 @@ const executiveMembers = [
     },
   },
   {
+    name: "Amit Kumar Mishra",
+    role: "General Secretary",
+    image: "/team/amit.png",
+    socials: {
+      linkedin: "https://iic.bitsindri.ac.in/Team",
+      instagram: "https://iic.bitsindri.ac.in/Team",
+      mail: "mailto:#",
+    },
+  },
+  {
     name: "Manohar Jha",
     role: "Treasurer",
     image: "/team/manoharr.png",
@@ -111,9 +121,9 @@ const executiveMembers = [
     },
   },
   {
-    name: "Amit Kumar Mishra",
-    role: "General Secretary",
-    image: "/team/amit.png",
+    name: "Tisha Agrawal",
+    role: "Joint Secretary",
+    image: "/team/tisha.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
       instagram: "https://iic.bitsindri.ac.in/Team",
@@ -127,16 +137,6 @@ const executiveMembers = [
     socials: {
       linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256/",
       instagram: "https://www.instagram.com/kashish_7029",
-      mail: "mailto:#",
-    },
-  },
-  {
-    name: "Tisha Aggarwal",
-    role: "Joint Secretary",
-    image: "/team/tisha.png",
-    socials: {
-      linkedin: "https://iic.bitsindri.ac.in/Team",
-      instagram: "https://iic.bitsindri.ac.in/Team",
       mail: "mailto:#",
     },
   },

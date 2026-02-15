@@ -1,3 +1,5 @@
+import { PhoneCall } from "lucide-react";
+import { Mail } from "lucide-react";
 import Image from "next/image";
 import React from "react";
 
@@ -100,6 +102,11 @@ const Footer = () => {
                   TEAM
                 </a>
               </li>
+              <li>
+                <a href="#" className="hover:text-white transition-colors">
+                  INNOVATHON
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -108,12 +115,36 @@ const Footer = () => {
             <h4 className="font-bold text-sm uppercase tracking-wider mb-6">
               Contact Us
             </h4>
-            <a
-              href="mailto:iic@bitsindri.ac.in"
-              className="text-gray-300 hover:text-white transition-colors text-sm"
-            >
-              iic@bitsindri.ac.in
-            </a>
+            <div className="">
+              <a
+                href="mailto:iic@bitsindri.ac.in"
+                className="text-gray-300 hover:text-white transition-colors text-sm"
+              >
+                <div className="flex items-center gap-2">
+                  <Mail size={14} className="font-bold" />
+                  <p>iic@bitsindri.ac.in</p>
+                </div>
+              </a>
+              <a
+                href="mailto:iic@bitsindri.ac.in"
+                className="text-gray-300 hover:text-white transition-colors text-sm"
+              >
+                <div className="flex items-center gap-2">
+                  <Mail size={14} className="font-bold" />
+                  <p>chief.iic@bitsindri.ac.in</p>
+                </div>
+              </a>
+            </div>
+            <div className="text-gray-300 hover:text-white transition-colors text-sm mt-4">
+              <div className="flex items-center gap-2">
+                <PhoneCall size={14} className="" />
+                <p>Utsav: +91 7992280144</p>
+              </div>
+              <div className="flex items-center gap-2">
+                <PhoneCall size={14} className="" />
+                <p>Aastha: +91 8789777502</p>
+              </div>
+            </div>
           </div>
         </div>
 
