@@ -93,7 +93,7 @@ const FaqSection = () => {
                 Reach out to us anytime - we’re happy to help
               </p>
               <a
-                href="mailto:iic@bitsindri.ac.in"
+                href="mailto:esummit@bitsindri.ac.in"
                 className="text-gray-300 hover:text-white transition-colors text-sm"
               >
                 <button className="px-8 py-3 font-kiona! bg-accent-300/20 backdrop-blur-lg border border-accent-800/50 text-white text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300 cursor-pointer">
