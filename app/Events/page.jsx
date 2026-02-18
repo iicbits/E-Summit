@@ -3,6 +3,7 @@
 import { MapPin, Calendar } from "lucide-react";
 import Image from "next/image";
 import React, { useState } from "react";
+import { motion } from "framer-motion";
 
 const eventCategories = ["All", "Competitions", "Workshops", "Networking"];
 
@@ -181,83 +182,47 @@ const events = [
 //   },
 // ];
 
+
 const EventCard = ({ event }) => (
-  <div className="group relative bg-[#160021] border border-white/5 rounded-xl overflow-hidden transition-all duration-500 hover:border-accent-500/50 ">
-    {/* Reveal card */}
-    {!event.revealed && (
-      <div className="absolute inset-0 bg-accent-100/10 h-full w-full backdrop-blur-sm text-center flex flex-col items-center justify-center font-kiona font-bold text-sm text-gray-300">
-        Event details will be revealed soon! <br />
-        Stay tuned for updates.
-      </div>
-    )}
+    <div className="group relative">
 
-    <div className="">
-      <div className="aspect-video w-full overflow-hidden">
-        <Image
-          src={event.image}
-          alt={event.title}
-          width={500}
-          height={300}
-          className={`w-full h-full object-cover transition-transform duration-700 ${event.revealed && "group-hover:scale-110 "}`}
-        />
-        {event.revealed && (
-          <div className="absolute top-4 left-4">
-            <span className="bg-accent-600/40 backdrop-blur-2xl border border-accent-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-              {event.category}
-            </span>
-          </div>
-        )}
-      </div>
+        {/* Background Glass Layer (THIS MOVES) */}
+        <div className="absolute inset-0 bg-[#160021] border border-white/10 rounded-2xl transition-all duration-500 group-hover:-translate-y-4 group-hover:shadow-[0_20px_40px_rgba(168,85,247,0.3)] group-hover:border-accent-400/50"></div>
 
-      <div className="px-4 py-6">
-        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent-400 transition-colors">
-          {event.title}
-        </h3>
+        {/* Content Layer */}
+        <div className="relative rounded-2xl overflow-hidden">
 
-        <p className="text-gray-400 text-sm mb-6 line-clamp-3">
-          {event.description}
-        </p>
+            {!event.revealed && (
+                <div className="absolute inset-0 z-20 bg-black/40 backdrop-blur-md flex items-center justify-center text-center text-sm font-bold text-gray-300 px-6">
+                    Event details will be revealed soon! <br />
+                    Stay tuned.
+                </div>
+            )}
 
-        <div className="w-full px-4 py-2 mb-4 border border-white/10 rounded-lg flex justify-between">
-          <p className="flex items-center gap-2 text-gray-300 text-xs">
-            <Calendar size={16} className="text-accent-500" />
-            {event.date}, {event.time}
-          </p>
-          <p className="flex items-center gap-2 text-gray-300 text-xs">
-            <MapPin size={16} className="text-accent-500" />
-            {event.venue}
-          </p>
+            <div className="aspect-video overflow-hidden">
+                <Image
+                    src={event.image}
+                    alt={event.title}
+                    width={500}
+                    height={300}
+                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                />
+            </div>
+
+            <div className="px-5 py-6">
+                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent-400 transition-colors">
+                    {event.title}
+                </h3>
+
+                <p className="text-gray-400 text-sm mb-6 line-clamp-3">
+                    {event.description}
+                </p>
+            </div>
         </div>
-
-        <div className="flex gap-4">
-          {/* View Details */}
-          {event.detailsLink && (
-            <a
-              href={event.detailsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full block text-center py-2 rounded-lg border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
-            >
-              View Details
-            </a>
-          )}
-
-          {/* Register */}
-          {event.registerLink && (
-            <a
-              href={event.registerLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="w-full block text-center py-2 rounded-lg border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-widest hover:bg-accent-700 hover:text-white transition-all duration-300"
-            >
-              Register ➝
-            </a>
-          )}
-        </div>
-      </div>
     </div>
-  </div>
 );
+
+
 
 export default function Page() {
   const [filter, setFilter] = useState("All");

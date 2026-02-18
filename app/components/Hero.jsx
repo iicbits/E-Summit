@@ -19,14 +19,23 @@ const Hero = () => {
                     {/* <p className="text-gray-500 text-sm mt-10 mb-6">
             Want to partner with North India's largest fest?
           </p> */}
+
+                    <a
+                        href="/brochure.pdf"
+                        download
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+
                     <button className="px-6 py-2 md:px-8 md:py-3 font-kiona! bg-accent-300/40 backdrop-blur-lg border border-accent-800/50 text-accent-800 text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300">
                         Download Brochure
                     </button>
+                    </a>
                 </div>
             </div>
             <div className="">
                 <video
-                    src="/videos/hero.mp4"
+                    src="/videos/hero.webm"
                     autoPlay
                     loop
                     muted
