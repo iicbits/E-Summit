@@ -29,7 +29,7 @@ const Footer = () => {
               <div className="h-8 w-px bg-gray-400"></div>
               <div className="h-8 w-auto flex items-center">
                 <a
-                  href="https://iic.bitsindri.ac.in/"
+                  href="https://iicbits@bitsindri.ac.in/"
                   alt="IIC BIT Sindri"
                   target="_blank"
                   rel="noopener noreferrer"
