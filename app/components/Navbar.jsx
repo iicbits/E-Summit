@@ -37,7 +37,7 @@ const Navbar = () => {
         <div className="flex items-center justify-center py-4">
           <Link href="/">
             <Image
-              src="/images/E-SUMMIT-06.png"
+              src="/images/E-SUMMIT-06.webp"
               alt="Logo"
               width={180}
               height={180}
@@ -72,7 +72,7 @@ const Navbar = () => {
             Tickets
           </Link>
           <Link
-            href="/"
+            href="/#footer"
             className={`hidden md:block px-4 py-2 border-2 border-accent-500 rounded-xl text-sm transition-colors duration-300 text-white -bg-conic-240 bg-accent-500 hover:bg-accent-500`}
           >
             Contact
@@ -132,7 +132,7 @@ const Navbar = () => {
                 Tickets
               </Link>
               <Link
-                href="/"
+                href="/#footer"
                 onClick={() => setIsMenuOpen(false)}
                 className={`px-4 py-2 border border-accent-700 rounded-xl text-sm text-center transition-colors duration-300 text-white bg-accent-600 hover:bg-accent-500`}
               >

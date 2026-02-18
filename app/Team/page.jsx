@@ -71,7 +71,7 @@ const facultyMembers = [
 const executiveMembers = [
   {
     name: "Syed Adnan Ahmad",
-    role: "Chief Coordinator",
+    role: " President",
     image: "/team/syedd.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/syedadnan03/",
@@ -81,7 +81,7 @@ const executiveMembers = [
   },
   {
     name: "Vivek Tiwari",
-    role: "Vice Chief Coordinator",
+    role: "Vice President",
     image: "/team/vivek_sir.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/vivek-tiwari-b929a822b/",
@@ -90,8 +90,18 @@ const executiveMembers = [
     },
   },
   {
+    name: "Amit Kumar Mishra",
+    role: "General Secretary",
+    image: "/team/amit.png",
+    socials: {
+      linkedin: "https://iic.bitsindri.ac.in/Team",
+      instagram: "https://iic.bitsindri.ac.in/Team",
+      mail: "mailto:#",
+    },
+  },
+  {
     name: "Manohar Jha",
-    role: "Secretary",
+    role: "Treasurer",
     image: "/team/manoharr.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/manoharjhaa/",
@@ -102,7 +112,7 @@ const executiveMembers = [
   },
   {
     name: "Harsh Bhargav",
-    role: "Technical Head",
+    role: "Technical Secretary",
     image: "/team/Harsh.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
@@ -111,9 +121,9 @@ const executiveMembers = [
     },
   },
   {
-    name: "Amit Kumar Mishra",
-    role: "Design Head",
-    image: "/team/amit.png",
+    name: "Tisha Agrawal",
+    role: "Joint Secretary",
+    image: "/team/tisha.png",
     socials: {
       linkedin: "https://iic.bitsindri.ac.in/Team",
       instagram: "https://iic.bitsindri.ac.in/Team",
@@ -122,21 +132,11 @@ const executiveMembers = [
   },
   {
     name: "Kashish Jain",
-    role: "Innovation Head",
+    role: "Operations Executive",
     image: "/team/kashish_mam.png",
     socials: {
       linkedin: "https://www.linkedin.com/in/kashish-jain-a92b05256/",
       instagram: "https://www.instagram.com/kashish_7029",
-      mail: "mailto:#",
-    },
-  },
-  {
-    name: "Tisha Aggarwal",
-    role: "Community Engagement",
-    image: "/team/tisha.png",
-    socials: {
-      linkedin: "https://iic.bitsindri.ac.in/Team",
-      instagram: "https://iic.bitsindri.ac.in/Team",
       mail: "mailto:#",
     },
   },
@@ -601,7 +601,7 @@ const coordinators = [
     role: "Operations",
     image: "/team/maitri.png",
     socials: {
-      linkedin: "",
+      linkedin: "#",
       instagram: "#",
       mail: "mailto:singhmaitri233@gmail.com",
     },

@@ -5,7 +5,7 @@ const Hero = () => {
     <div className="relative min-h-screen">
       <div className="absolute flex justify-center items-center flex-col w-full mt-60">
         <Image
-          src="/images/E-SUMMIT-06.png"
+          src="/images/E-SUMMIT-06.webp"
           alt="Hero Image"
           width={400}
           height={200}

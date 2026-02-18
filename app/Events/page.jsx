@@ -9,145 +9,251 @@ const eventCategories = ["All", "Competitions", "Workshops", "Networking"];
 const events = [
   {
     id: 1,
-    title: "INNOVATHON 3.0",
+    title: "E-Summit 2026",
+    revealed: false,
     category: "Competitions",
-    date: "Feb 6th",
+    date: "Mar 13th",
     time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description:
-      "INNOVATHON 3.0 is a 36-hour innovation hackathon focused on real-world technology solutions.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione minima obcaecation.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/INNOVATHON.docx",
-    registerLink: "https://example.com/register-innovathon",
+    detailsLink: "",
+    registerLink: "",
   },
   {
     id: 2,
-    title: "TEXcelerate 2026",
+    title: "E-Summit 2026",
+    revealed: false,
     category: "Competitions",
-    date: "Feb 6th",
-    time: "11:00 AM",
+    date: "Mar 13th",
+    time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description:
-      "TEXcelerate 2026 is a flagship idea pitching and innovation challenge focused on scalable industry solutions.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione minima obcaecation.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/texcelerate.docx",
-    registerLink: "https://example.com/register-texcelerate",
+    detailsLink: "",
+    registerLink: "",
   },
   {
     id: 3,
-    title: "UDAAN UG Fellowship",
+    title: "E-Summit 2026",
+    revealed: false,
     category: "Competitions",
-    date: "Feb 7th",
-    time: "10:00 AM",
+    date: "Mar 13th",
+    time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description:
-      "UDAAN UG Fellowship supports research-driven undergraduate innovation aligned with national priorities.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione minima obcaecation.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/udaan.docx",
-    registerLink: "https://example.com/register-udaan",
+    detailsLink: "",
+    registerLink: "",
   },
   {
     id: 4,
-    title: "Technology Development Program",
+    title: "E-Summit 2026",
+    revealed: false,
     category: "Competitions",
-    date: "Feb 7th",
-    time: "01:00 PM",
+    date: "Mar 13th",
+    time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description:
-      "Technology Development Program supports faculty-led applied research to convert lab innovation into deployment-ready technologies.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione minima obcaecation.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/tdp.docx",
-    registerLink: "https://example.com/register-tdp",
+    detailsLink: "",
+    registerLink: "",
   },
   {
     id: 5,
-    title: "Being an Entrepreneur",
-    category: "Competitions",
-    date: "Feb 8th",
-    time: "10:00 AM",
+    title: "E-Summit 2026",
+    revealed: false,
+    category: "Workshops",
+    date: "Mar 13th",
+    time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description:
-      "Being an Entrepreneur is a case-based competition focused on real-world business strategy and decision-making.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione minima obcaecation.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/entrepreneur.docx",
-    registerLink: "https://example.com/register-entrepreneur",
+    detailsLink: "",
+    registerLink: "",
   },
   {
     id: 6,
-    title: "Equity Minds",
+    title: "E-Summit 2026",
+    revealed: false,
     category: "Networking",
-    date: "Feb 8th",
-    time: "03:00 PM",
+    date: "Mar 13th",
+    time: "09:00 AM",
     venue: "BIT Sindri Campus",
     description:
-      "Equity Minds is a virtual investment simulation where participants think and decide like venture capitalists.",
+      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quasi ratione minima obcaecation.",
     image: "/images/hero.webp",
-    detailsLink: "/DOCS/equityminds.docx",
-    registerLink: "https://example.com/register-equity",
+    detailsLink: "",
+    registerLink: "",
   },
 ];
 
+//Original events data with all details (for reference)
+// const events = [
+//   {
+//     id: 1,
+//     title: "INNOVATHON 3.0",
+//     revealed: false,
+//     category: "Competitions",
+//     date: "Feb 6th",
+//     time: "09:00 AM",
+//     venue: "BIT Sindri Campus",
+//     description:
+//       "INNOVATHON 3.0 is a 36-hour innovation hackathon focused on real-world technology solutions.",
+//     image: "/images/hero.webp",
+//     detailsLink: "/DOCS/INNOVATHON.docx",
+//     registerLink: "https://example.com/register-innovathon",
+//   },
+//   {
+//     id: 2,
+//     title: "TEXcelerate 2026",
+//     revealed: false,
+//     category: "Competitions",
+//     date: "Feb 6th",
+//     time: "11:00 AM",
+//     venue: "BIT Sindri Campus",
+//     description:
+//       "TEXcelerate 2026 is a flagship idea pitching and innovation challenge focused on scalable industry solutions.",
+//     image: "/images/hero.webp",
+//     detailsLink: "/DOCS/texcelerate.docx",
+//     registerLink: "https://example.com/register-texcelerate",
+//   },
+//   {
+//     id: 3,
+//     title: "UDAAN UG Fellowship",
+//     revealed: false,
+//     category: "Competitions",
+//     date: "Feb 7th",
+//     time: "10:00 AM",
+//     venue: "BIT Sindri Campus",
+//     description:
+//       "UDAAN UG Fellowship supports research-driven undergraduate innovation aligned with national priorities.",
+//     image: "/images/hero.webp",
+//     detailsLink: "/DOCS/udaan.docx",
+//     registerLink: "https://example.com/register-udaan",
+//   },
+//   {
+//     id: 4,
+//     title: "Technology Development Program",
+//     revealed: false,
+//     category: "Competitions",
+//     date: "Feb 7th",
+//     time: "01:00 PM",
+//     venue: "BIT Sindri Campus",
+//     description:
+//       "Technology Development Program supports faculty-led applied research to convert lab innovation into deployment-ready technologies.",
+//     image: "/images/hero.webp",
+//     detailsLink: "/DOCS/tdp.docx",
+//     registerLink: "https://example.com/register-tdp",
+//   },
+//   {
+//     id: 5,
+//     title: "Being an Entrepreneur",
+//     revealed: false,
+//     category: "Competitions",
+//     date: "Feb 8th",
+//     time: "10:00 AM",
+//     venue: "BIT Sindri Campus",
+//     description:
+//       "Being an Entrepreneur is a case-based competition focused on real-world business strategy and decision-making.",
+//     image: "/images/hero.webp",
+//     detailsLink: "/DOCS/entrepreneur.docx",
+//     registerLink: "https://example.com/register-entrepreneur",
+//   },
+//   {
+//     id: 6,
+//     title: "Equity Minds",
+//     revealed: false,
+//     category: "Networking",
+//     date: "Feb 8th",
+//     time: "03:00 PM",
+//     venue: "BIT Sindri Campus",
+//     description:
+//       "Equity Minds is a virtual investment simulation where participants think and decide like venture capitalists.",
+//     image: "/images/hero.webp",
+//     detailsLink: "/DOCS/equityminds.docx",
+//     registerLink: "https://example.com/register-equity",
+//   },
+// ];
+
 const EventCard = ({ event }) => (
-  <div className="group relative bg-[#160021] border border-white/5 rounded-xl overflow-hidden hover:border-accent-500/50 transition-all duration-500">
-    <div className="aspect-video w-full overflow-hidden">
-      <Image
-        src={event.image}
-        alt={event.title}
-        width={500}
-        height={300}
-        className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-      />
-      <div className="absolute top-4 left-4">
-        <span className="bg-accent-600/40 backdrop-blur-2xl border border-accent-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
-          {event.category}
-        </span>
+  <div className="group relative bg-[#160021] border border-white/5 rounded-xl overflow-hidden transition-all duration-500 hover:border-accent-500/50 ">
+    {/* Reveal card */}
+    {!event.revealed && (
+      <div className="absolute inset-0 bg-accent-100/10 h-full w-full backdrop-blur-sm text-center flex flex-col items-center justify-center font-kiona font-bold text-sm text-gray-300">
+        Event details will be revealed soon! <br />
+        Stay tuned for updates.
       </div>
-    </div>
+    )}
 
-    <div className="px-4 py-6">
-      <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent-400 transition-colors">
-        {event.title}
-      </h3>
-
-      <p className="text-gray-400 text-sm mb-6 line-clamp-3">
-        {event.description}
-      </p>
-
-      <div className="w-full px-4 py-2 mb-4 border border-white/10 rounded-lg flex justify-between">
-        <p className="flex items-center gap-2 text-gray-300 text-xs">
-          <Calendar size={16} className="text-accent-500" />
-          {event.date}, {event.time}
-        </p>
-        <p className="flex items-center gap-2 text-gray-300 text-xs">
-          <MapPin size={16} className="text-accent-500" />
-          {event.venue}
-        </p>
+    <div className="">
+      <div className="aspect-video w-full overflow-hidden">
+        <Image
+          src={event.image}
+          alt={event.title}
+          width={500}
+          height={300}
+          className={`w-full h-full object-cover transition-transform duration-700 ${event.revealed && "group-hover:scale-110 "}`}
+        />
+        {event.revealed && (
+          <div className="absolute top-4 left-4">
+            <span className="bg-accent-600/40 backdrop-blur-2xl border border-accent-500 text-white text-[10px] font-bold px-3 py-1 rounded-full uppercase tracking-widest">
+              {event.category}
+            </span>
+          </div>
+        )}
       </div>
 
-      <div className="flex gap-4">
-        {/* View Details */}
-        {event.detailsLink && (
-          <a
-            href={event.detailsLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full block text-center py-2 rounded-lg border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
-          >
-            View Details
-          </a>
-        )}
+      <div className="px-4 py-6">
+        <h3 className="text-xl font-bold text-white mb-3 group-hover:text-accent-400 transition-colors">
+          {event.title}
+        </h3>
 
-        {/* Register */}
-        {event.registerLink && (
-          <a
-            href={event.registerLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="w-full block text-center py-2 rounded-lg border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-widest hover:bg-accent-700 hover:text-white transition-all duration-300"
-          >
-            Register ➝
-          </a>
-        )}
+        <p className="text-gray-400 text-sm mb-6 line-clamp-3">
+          {event.description}
+        </p>
+
+        <div className="w-full px-4 py-2 mb-4 border border-white/10 rounded-lg flex justify-between">
+          <p className="flex items-center gap-2 text-gray-300 text-xs">
+            <Calendar size={16} className="text-accent-500" />
+            {event.date}, {event.time}
+          </p>
+          <p className="flex items-center gap-2 text-gray-300 text-xs">
+            <MapPin size={16} className="text-accent-500" />
+            {event.venue}
+          </p>
+        </div>
+
+        <div className="flex gap-4">
+          {/* View Details */}
+          {event.detailsLink && (
+            <a
+              href={event.detailsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full block text-center py-2 rounded-lg border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-widest hover:bg-white hover:text-black transition-all duration-300"
+            >
+              View Details
+            </a>
+          )}
+
+          {/* Register */}
+          {event.registerLink && (
+            <a
+              href={event.registerLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-full block text-center py-2 rounded-lg border border-white/10 text-gray-300 text-xs font-bold uppercase tracking-widest hover:bg-accent-700 hover:text-white transition-all duration-300"
+            >
+              Register ➝
+            </a>
+          )}
+        </div>
       </div>
     </div>
   </div>
@@ -157,9 +263,7 @@ export default function Page() {
   const [filter, setFilter] = useState("All");
 
   const filteredEvents =
-    filter === "All"
-      ? events
-      : events.filter((e) => e.category === filter);
+    filter === "All" ? events : events.filter((e) => e.category === filter);
 
   return (
     <div className="min-h-screen text-white pb-20">
@@ -177,7 +281,8 @@ export default function Page() {
             THE <span className="text-accent-400">LINEUP</span>
           </h1>
           <p className="text-gray-300 max-w-2xl mx-auto">
-            Discover innovation challenges, competitions, and networking events designed to turn ideas into action.
+            Discover innovation challenges, competitions, and networking events
+            designed to turn ideas into action.
           </p>
         </div>
       </section>

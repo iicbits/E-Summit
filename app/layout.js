@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 
 const rubik = Rubik({
   subsets: ["latin"],
-  variable: "--font-rubik", // This will create the CSS variable
+  variable: "--font-rubik",
 });
 
 const kiona = localFont({
@@ -28,7 +28,7 @@ const kiona = localFont({
       style: "normal",
     },
   ],
-  variable: "--font-kiona", // CSS variable for usage
+  variable: "--font-kiona",
 });
 
 export const metadata = {
@@ -38,6 +38,9 @@ export const metadata = {
   },
   description:
     "The flagship entrepreneurial summit of BIT Sindri, Dhanbad. Fostering innovation, leadership, and startup culture in India's industrial heartland.",
+  verification: {
+    google: "b0uNWU4nQDY_PvnNkagxVca25Od88LjZcCj-Sbp78Qs",
+  },
   keywords: [
     "E-Summit BIT Sindri",
     "BIT Sindri",
@@ -71,8 +74,8 @@ export const metadata = {
     images: [
       {
         url: "/og-image-bits.png",
-        width: 1200,
-        height: 630,
+        width: 600,
+        height: 400,
         alt: "E-Summit '26 BIT Sindri - Fostering Innovation",
       },
     ],

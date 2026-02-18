@@ -20,20 +20,29 @@ const About = () => {
 
       <div className="flex gap-16">
         <div className="max-w-2xl font-kiona text-purple-100 text-sm md:text-md leading-loose tracking-wide space-y-6">
-          
           <p>
-            <strong>E-Summit 2026</strong> marks a historic milestone in the entrepreneurial journey of <strong>BIT Sindri</strong>. Organized <strong>for the first time</strong> by the <strong>Institution’s Innovation Council (IIC 8.0)</strong>, the summit reflects the institute’s growing commitment to innovation, startups, and entrepreneurial thinking.
+            <strong>E-Summit 2026</strong> marks a historic milestone in the
+            entrepreneurial journey of <strong>BIT Sindri</strong>. Organized{" "}
+            <strong>for the first time</strong> by the{" "}
+            <strong>Institution’s Innovation Council (IIC 8.0)</strong>, the
+            summit reflects the institute’s growing commitment to innovation,
+            startups, and entrepreneurial thinking.
           </p>
 
           <p>
-            Designed as a platform for learning, collaboration, and real-world exposure, E-Summit 2026 brings together students, innovators, industry experts, mentors, and investors from across the country. Featuring startup pitching sessions, hackathons, expert talks, panel discussions, and hands-on workshops, the summit lays the foundation for a strong startup culture on campus, encouraging students to take ideas beyond classrooms and transform them into meaningful ventures.
+            Designed as a platform for learning, collaboration, and real-world
+            exposure, E-Summit 2026 brings together students, innovators,
+            industry experts, mentors, and investors from across the country.
+            Featuring startup pitching sessions, hackathons, expert talks, panel
+            discussions, and hands-on workshops, the summit lays the foundation
+            for a strong startup culture on campus, encouraging students to take
+            ideas beyond classrooms and transform them into meaningful ventures.
           </p>
-
         </div>
 
         <div className="hidden md:flex min-w-xl justify-center items-center">
           <Image
-            src="/images/E-SUMMIT-05.png"
+            src="/images/E-SUMMIT-05.webp"
             alt="Hero Image"
             width={400}
             height={200}
