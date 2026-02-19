@@ -12,6 +12,9 @@
   --accent-700: #5a108f;
   --accent-800: #4a0a77;
   --accent-900: #3c0663;
+  --brand-purple: #814ac8;
+  --brand-light-purple: #df7afe;
+  --brand-theme: #ab51e3;
 }
 
 @theme inline {
