@@ -5,11 +5,11 @@ import About from "./components/About";
 import FaqSection from "./components/FaqSection";
 import StatsSection from "./components/Stats";
 import Workshops from "./components/Workshops";
+import Contact from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="">
-      {/* <div className="w-64 h-64 bg-[radial-gradient(circle_at_center,var(--tw-gradient-stops))] from-teal-300 via-gray-100 to-blue-300"></div> */}
+    <div>
       <Hero />
       <About />
       <StatsSection />
@@ -17,6 +17,7 @@ export default function Home() {
       <SponsorSection />
       <SpeakerSlider />
       <FaqSection />
+      <Contact />
     </div>
   );
 }
