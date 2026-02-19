@@ -6,65 +6,86 @@ import { Linkedin, Instagram, Mail } from "lucide-react";
 
 const facultyMembers = [
   {
+    name: "Prof. D.K. Singh",
+    role: "Chief Patron",
+    image: "/team/dk.singh.png",
+  },
+  {
     name: "Prof. Pankaj Rai",
-    role: "Chairman IIC",
+    role: "Patron",
     image: "/team/pankajrai.webp",
   },
   {
     name: "Prof. Prakash Kumar",
-    role: "President IIC",
+    role: "Chairman cum Convener",
     image: "/team/prakash.jpg",
   },
   {
     name: "Dr. S C Dutta",
-    role: "Vice President IIC",
+    role: "Secretary",
     image: "/team/sc.webp",
   },
-  { name: "Dr. Rahul Kumar", role: "Convener", image: "/team/rahul.webp" },
+  { name: "Dr. Rahul Kumar", role: "Co-Convener", image: "/team/rahul.webp" },
+  { name: "Prof. R.K. Verma", role: "Co-Convener", image: "/team/rahul.webp" },
   {
     name: "Dr. Mukesh Chandra",
-    role: "Innovation Activity Coordinator",
+    role: "Faculty Coordinator",
     image: "/team/mukesh.webp",
   },
   {
     name: "Mr. Khustar Ansari",
-    role: "Hackathon Coordinator",
+    role: "Faculty Coordinator",
     image: "/team/khustar.webp",
   },
   {
-    name: "Mr. Vijay Besra",
-    role: "ARIIA Coordinator",
-    image: "/team/vijay.webp",
-  },
-  {
-    name: "Dr. Kashif Hasan Kazmi",
-    role: "Internal Event Coordinator",
-    image: "/team/kashif.webp",
-  },
-  {
-    name: "Sarah Kumala",
-    role: "VP of Customer Success",
+    name: "Mr. Sanjay Pal",
+    role: "Faculty Coordinator",
     image: "/team/fac.webp",
   },
   {
-    name: "Mr. Sanjay Oraon",
-    role: "IPR Activity Coordinator",
-    image: "/team/sanjay.webp",
+    name: "Mr. Vijay Kr. Besra",
+    role: "Faculty Coordinator",
+    image: "/team/vijay.webp",
   },
   {
-    name: "Dr. Priyanka Kumari",
-    role: "NIRF Coordinator",
+    name: "Mr. Izhar Hussain",
+    role: "Faculty Coordinator",
     image: "/team/mam.webp",
   },
   {
+    name: "Dr. Priyanka Kumari",
+    role: "Faculty Coordinator",
+    image: "/team/mam.webp",
+  },
+  {
+    name: "Dr. Kashif Hasan Kazmi",
+    role: "Faculty Coordinator",
+    image: "/team/kashif.webp",
+  },
+  {
+    name: "Mr. Sanjay Oraon",
+    role: "Faculty Coordinator",
+    image: "/team/sanjay.webp",
+  },
+  {
     name: "Dr. Abhijeet Anand",
-    role: "Internship Coordinator",
+    role: "Faculty Coordinator",
+    image: "/team/abhijit.webp",
+  },
+  {
+    name: "Dr. Arvind Kumar",
+    role: "Faculty Coordinator",
     image: "/team/abhijit.webp",
   },
   {
     name: "Mr. Roshan Shankar",
-    role: "Research & Development Coordinator",
+    role: "Faculty Coordinator",
     image: "/team/roshan.webp",
+  },
+  {
+    name: "Ms. Meenu Manjari",
+    role: "Faculty Coordinator",
+    image: "/team/abhijit.webp",
   },
 ];
 
@@ -268,7 +289,7 @@ const coordinators = [
   {
     name: "Krrish Raj",
     role: "Community Engagement",
-    image: "/team/krrish.png",
+    image: "/team/krrish(1).png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/krrish-raj-333926335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -733,16 +754,46 @@ export default function Page() {
 
       <section className="px-8">
         {/* Faculty Section */}
-        <h2 className="text-2xl md:text-3xl uppercase font-bold text-center mb-2 md:mb-4">
-          Faculty Members
-        </h2>
-        <p className="h-0.5 w-2xs md:w-sm bg-linear-to-r from-transparent via-purple-500 to-transparent mx-auto mb-16"></p>
+<h2 className="text-2xl md:text-3xl uppercase font-bold text-center mb-2 md:mb-4">
+  Faculty Members
+</h2>
+<p className="h-0.5 w-2xs md:w-sm bg-linear-to-r from-transparent via-purple-500 to-transparent mx-auto mb-16"></p>
 
-        <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-          {facultyMembers.map((member, index) => (
-            <TeamCard key={index} member={member} card={"faculty"} />
-          ))}
-        </div>
+<div className="max-w-7xl mx-auto mb-20">
+
+  {/* FIRST ROW → 2 CARDS (centered inside 4-column grid) */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+
+    {/* Empty Column (for centering on lg) */}
+    <div className="hidden lg:block"></div>
+
+    {facultyMembers.slice(0, 2).map((member) => (
+      <TeamCard
+        key={member.name}
+        member={member}
+        card={"faculty"}
+      />
+    ))}
+
+    {/* Empty Column (for centering on lg) */}
+    <div className="hidden lg:block"></div>
+
+  </div>
+
+  {/* REMAINING → 4 PER ROW ALWAYS */}
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
+    {facultyMembers.slice(2).map((member) => (
+      <TeamCard
+        key={member.name}
+        member={member}
+        card={"faculty"}
+      />
+    ))}
+  </div>
+
+</div>
+
+
 
         {/* Tabs */}
         <div className="flex justify-center flex-wrap gap-6 mb-12">
