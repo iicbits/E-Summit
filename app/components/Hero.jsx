@@ -22,7 +22,7 @@ export default function hero() {
             opacity: { duration: 0.8 },
             rotate: { duration: 40, repeat: Infinity, ease: "linear" },
           }}
-          className="relative w-[406px] h-[406px] rounded-[363px]"
+          className="relative w-101.5 h-101.5 rounded-[363px]"
           style={{
             background:
               "linear-gradient(229deg, #df7afe 13%, rgba(201, 110, 240, 0) 35.0236%, rgba(164, 92, 219, 0) 64.1724%, #814ac8 88%)",
@@ -36,7 +36,7 @@ export default function hero() {
             scale: { duration: 1, delay: 0.5 },
             rotate: { duration: 25, repeat: Infinity, ease: "linear" },
           }}
-          className="absolute w-[300px] h-[300px] rounded-[363px]"
+          className="absolute w-75 h-75 rounded-[363px]"
           style={{
             background:
               "linear-gradient(141deg, #df7afe 13%, rgba(201, 110, 240, 0) 35.0236%, rgba(164, 92, 219, 0) 64.1724%, #814ac8 88%)",
@@ -59,7 +59,7 @@ export default function hero() {
           ease: [0.16, 1, 0.3, 1],
           type: "tween",
         }}
-        className="absolute z-20 w-[850px] max-w-full px-4 flex flex-col items-center"
+        className="absolute z-20 w-212.5 max-w-full px-4 flex flex-col items-center"
         style={{ top: "47%", left: "49%" }}
       >
         <Image
@@ -79,9 +79,9 @@ export default function hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 1.2, duration: 0.8 }}
-          className={`mt-10 px-8 py-3 rounded-full font-medium text-lg transition-all flex items-center gap-3 border ${
+          className={`mt-10 px-5 py-2 md:px-8 md:py-3 rounded-full font-normal md:font-medium text-base md:text-lg transition-all flex items-center gap-3 border ${
             BROCHURE_LINK
-              ? "bg-white text-black border-white hover:bg-gray-200 cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95"
+              ? "backdrop-blur-2xl text-purple-200/80 border-accent-400 cursor-pointer shadow-[0_0_20px_rgba(255,255,255,0.3)] hover:scale-105 active:scale-95"
               : "bg-white/5 text-white/40 border-white/10 cursor-not-allowed"
           }`}
           onClick={(e) => !BROCHURE_LINK && e.preventDefault()}

@@ -49,16 +49,10 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 ${
-        scrolled ? "pt-0" : "pt-[15px]"
-      }`}
+      className={`absolute md:fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 font-kiona!`}
     >
       <div
-        className={`relative flex items-center justify-between px-[40px] transition-all duration-500 ${
-          scrolled
-            ? "w-full max-w-full rounded-none bg-black/80 backdrop-blur-md border-b border-white/10 py-4"
-            : "w-full max-w-[1200px] h-[72px] bg-transparent"
-        }`}
+        className={`relative w-full max-w-full flex items-center justify-between px-2 md:px-10 transition-all duration-500 md:backdrop-blur-2xl py-4`}
       >
         <Link
           href="/"
@@ -71,7 +65,7 @@ const Navbar = () => {
           }}
           className="flex items-center z-50 relative"
         >
-          <div className="h-[60px] w-auto relative">
+          <div className="h-12 md:h-15 w-auto relative">
             <Image
               src="/images/E-SUMMIT-06.webp"
               alt="Logo"
@@ -84,7 +78,7 @@ const Navbar = () => {
 
         {/* Desktop Nav Links */}
         <div
-          className="hidden md:flex items-center justify-between w-[400px] h-[50px]"
+          className="hidden md:flex items-center justify-between w-100 h-12.5"
           onMouseLeave={() => setHovered(null)}
         >
           {navItems.map((item) => (
@@ -92,21 +86,21 @@ const Navbar = () => {
               key={item.name}
               href={item.href}
               onMouseEnter={() => setHovered(item.name)}
-              className="relative px-3 py-1.5 text-[16px] font-medium transition-colors rounded-md"
+              className="relative px-4 py-2 text-[16px] transition-colors rounded-md"
             >
               {hovered === item.name && (
                 <motion.span
                   layoutId="nav-hover"
-                  className="absolute inset-0 bg-white/10 rounded-md"
+                  className="absolute inset-0 bg-purple-500/10 rounded-3xl"
                   transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
                 />
               )}
               <span
-                className={`relative z-10 transition-colors duration-200 ${
+                className={`relative px-2 z-10 flex justify-center items-center transition-colors duration-200 ${
                   activeItem === item.name
                     ? "text-accent-100"
                     : hovered === item.name
-                      ? "text-[#0099ff]"
+                      ? "text-accent-300"
                       : "text-white"
                 }`}
               >
@@ -116,28 +110,17 @@ const Navbar = () => {
           ))}
         </div>
 
-        <div className="hidden md:flex items-center gap-[10px]">
+        <div className="hidden md:flex items-center gap-2.5">
           <Link
             href="/"
-            className="flex items-center justify-center px-[13px] py-[9px] rounded-[6px] bg-transparent text-white text-[15px] font-medium border border-white/10 hover:bg-white/10 transition-all"
+            className="flex items-center justify-center px-4 py-2 rounded-3xl bg-transparent text-white text-[15px] font-medium border border-purple-400/30 hover:bg-purple-500/20 transition-all"
           >
             Tickets
           </Link>
 
           <Link
-            href="/#contact"
-            onClick={(e) => {
-              setIsMenuOpen(false);
-              if (pathname === "/") {
-                e.preventDefault();
-                const el = document.getElementById("contact");
-                if (el) {
-                  el.scrollIntoView({ behavior: "smooth" });
-                  window.history.pushState(null, "", "#contact");
-                }
-              }
-            }}
-            className="flex items-center justify-center px-[13px] py-[9px] rounded-[6px] bg-[#814ac8] text-white text-[15px] font-medium border border-white/10 hover:bg-[#814ac8]/90 transition-all cursor-pointer"
+            href="/Contact"
+            className="flex items-center justify-center px-4 py-2 rounded-3xl bg-accent-800 text-white text-[15px] border border-white/10 hover:bg-accent-800/60 transition-all cursor-pointer"
           >
             Contact
           </Link>
@@ -159,7 +142,7 @@ const Navbar = () => {
               animate={{ opacity: 1, height: "100vh" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
-              className="absolute top-0 left-0 w-full bg-black flex flex-col items-center justify-center gap-8 md:hidden overflow-hidden"
+              className="absolute top-0 left-0 w-full backdrop-blur-2xl flex flex-col items-center justify-center gap-8 md:hidden overflow-hidden"
             >
               <div className="flex flex-col items-center gap-6">
                 {mobileNavItems.map((item, index) => (
@@ -171,7 +154,7 @@ const Navbar = () => {
                   >
                     <Link
                       href={item.href}
-                      className="text-3xl font-bold text-white/70 hover:text-white transition-colors"
+                      className="text-xl font-bold text-white/70 hover:text-white transition-colors"
                       onClick={() => setIsMenuOpen(false)}
                     >
                       {item.name}
@@ -187,19 +170,14 @@ const Navbar = () => {
                 className="flex flex-col gap-4 mt-8 w-64"
               >
                 <a
-                  href="#contact"
-                  onClick={(e) => {
-                    setIsMenuOpen(false);
-                    if (pathname === "/") {
-                      e.preventDefault();
-                      const el = document.getElementById("contact");
-                      if (el) {
-                        el.scrollIntoView({ behavior: "smooth" });
-                        window.history.pushState(null, "", "#contact");
-                      }
-                    }
-                  }}
-                  className="w-full px-5 py-4 rounded-xl bg-[#814ac8] text-white font-bold text-lg text-center shadow-lg cursor-pointer"
+                  href="/"
+                  className="flex items-center justify-center px-4 py-2 rounded-3xl  text-white text-[15px] border border-accent-400/70 hover:bg-accent-800/60 transition-all cursor-pointer"
+                >
+                  Tickets
+                </a>
+                <a
+                  href="/Contact"
+                  className="flex items-center justify-center px-4 py-2 rounded-3xl bg-accent-800 text-white text-[15px] border border-white/10 hover:bg-accent-800/60 transition-all cursor-pointer"
                 >
                   Contact Us
                 </a>
