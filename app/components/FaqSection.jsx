@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import React, { useState } from "react";
 
 const faqs = [
@@ -92,14 +93,14 @@ const FaqSection = () => {
               <p className="text-gray-400 text-sm">
                 Reach out to us anytime - we’re happy to help
               </p>
-              <a
-                href="mailto:esummit@bitsindri.ac.in"
+              <Link
+                href="/Contact"
                 className="text-gray-300 hover:text-white transition-colors text-sm"
               >
-                <button className="px-8 py-3 font-kiona! bg-accent-300/20 backdrop-blur-lg border border-accent-800/50 text-white text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-500 hover:text-white transition-all duration-300 cursor-pointer">
+                <button className="px-8 py-3 font-kiona! bg-accent-800 backdrop-blur-lg border border-accent-800/50 text-white text-xs font-bold tracking-widest uppercase rounded-full hover:bg-accent-800/50 hover:text-white transition-all duration-300 cursor-pointer">
                   Ask a Question
                 </button>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

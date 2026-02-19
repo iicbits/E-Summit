@@ -17,7 +17,6 @@ export default function Home() {
       <SponsorSection />
       <SpeakerSlider />
       <FaqSection />
-      <Contact />
     </div>
   );
 }

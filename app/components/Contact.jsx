@@ -78,11 +78,11 @@ export default function Contact() {
       className="relative w-full min-h-screen flex flex-col items-center justify-center bg-black py-20 px-4 overflow-hidden"
     >
       <div
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] rounded-full blur-[120px] pointer-events-none"
+        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-200 h-200 rounded-full blur-[120px] pointer-events-none"
         style={{ background: "rgba(171, 81, 227, 0.1)" }}
       />
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div className="relative z-10 pt-10 w-full max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -91,7 +91,7 @@ export default function Contact() {
           className="text-left space-y-8"
         >
           <div>
-            <h2 className="font-bold text-5xl md:text-7xl tracking-tight text-white mb-4">
+            <h2 className="font-bold text-2xl md:text-5xl tracking-tight text-white mb-4">
               Contact <span style={{ color: "#AB51E3" }}>Us</span>
             </h2>
             <p className="text-gray-400 text-lg md:text-xl max-w-md leading-relaxed">
@@ -109,14 +109,14 @@ export default function Contact() {
                   Email us at
                 </p>
                 <a
-                  href="mailto:iic@bitsindri.ac.in"
-                  className="block text-lg font-medium hover:text-accent-400 transition-colors"
+                  href="mailto:esummit@bitsindri.ac.in"
+                  className="block hover:text-accent-400 transition-colors"
                 >
-                  iic@bitsindri.ac.in
+                  esummit@bitsindri.ac.in
                 </a>
                 <a
                   href="mailto:chief.iic@bitsindri.ac.in"
-                  className="block text-lg font-medium hover:text-accent-400 transition-colors"
+                  className="block hover:text-accent-400 transition-colors"
                 >
                   chief.iic@bitsindri.ac.in
                 </a>
@@ -129,11 +129,11 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-sm text-gray-500 font-mono mb-1">Call us</p>
-                <p className="text-lg font-medium">
+                <p className="">
                   <span className="text-gray-400 text-base">Utsav:</span> +91
                   7992280144
                 </p>
-                <p className="text-lg font-medium">
+                <p className="">
                   <span className="text-gray-400 text-base">Aastha:</span> +91
                   8789777502
                 </p>
@@ -153,7 +153,7 @@ export default function Contact() {
             onSubmit={handleSubmit}
             className="w-full bg-white/5 backdrop-blur-xl border border-white/10 rounded-3xl p-8 md:p-10 shadow-2xl relative overflow-hidden group"
           >
-            <div className="absolute inset-0 bg-gradient-to-br from-[#AB51E3]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="absolute inset-0 bg-linear-to-br from-[#AB51E3]/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
             <AnimatePresence>
               {isSuccess && (
@@ -289,9 +289,8 @@ export default function Contact() {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full text-white font-bold py-4 rounded-xl hover:-translate-y-1 transition-all disabled:opacity-70 disabled:cursor-not-allowed flex items-center justify-center gap-2 mt-2"
+                className="w-full bg-accent-800 text-white font-bold py-4 rounded-xl hover:-translate-y-1 transition-all disabled:opacity-70 cursor-pointer disabled:cursor-not-allowed flex items-center justify-center gap-2 mt-2"
                 style={{
-                  backgroundColor: "#AB51E3",
                   boxShadow: "0 4px 24px rgba(171,81,227,0.25)",
                 }}
               >
