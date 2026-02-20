@@ -289,7 +289,7 @@ const coordinators = [
   {
     name: "Krrish Raj",
     role: "Community Engagement",
-    image: "/team/krrish(1).png",
+    image: "/team/krrish.png",
     socials: {
       linkedin:
         "https://www.linkedin.com/in/krrish-raj-333926335?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
