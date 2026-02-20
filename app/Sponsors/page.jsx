@@ -138,7 +138,7 @@ const Reveal = () => {
         {" "}
         <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 tracking-tighter leading-tight">
           {" "}
-          SPEAKERS <br />{" "}
+          SPONSORS <br />{" "}
           <span className="text-transparent bg-clip-text bg-linear-to-r from-purple-400 via-fuchsia-300 to-blue-400">
             {" "}
             REVEALING SOON{" "}

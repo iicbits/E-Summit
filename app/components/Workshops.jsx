@@ -112,7 +112,7 @@ const workshops = [
       engineering-driven startups.
     </>
   ),
-  logo: "/images/cfd.webp", // replace with actual image
+  logo: "/images/seminar.webp", // replace with actual image
 },
 {
   title: "Smart India Hackathon (SIH) 2025 – Internal Round",

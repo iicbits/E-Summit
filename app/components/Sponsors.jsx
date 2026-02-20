@@ -5,7 +5,7 @@ import Image from "next/image";
 const sponsors = [
   {
     tier: "Title Sponsor",
-    name: "BITSANA",
+    name: "BITSAANA",
     logo: "/images/Bitsaana.jpg",
   },
   {
@@ -20,7 +20,7 @@ const sponsors = [
   },
   {
     tier: "Official IoT's Partner",
-    name: "Robotree",
+    name: "RoboTree",
     logo: "/images/robotree.png",
   },
   {
@@ -33,8 +33,35 @@ const sponsors = [
     name: "Haldiram's",
     logo: "/images/haldi.png",
   },
-];
 
+  // 🔥 Newly Added Sponsors
+
+  {
+    tier: "Technology Partner",
+    name: "Mecon Limited",
+    logo: "/images/mecon.webp",
+  },
+  {
+    tier: "Innovation Partner",
+    name: "SAIL",
+    logo: "/images/sail.webp",
+  },
+  {
+    tier: "Media Partner",
+    name: "Coal India Limited",
+    logo: "/images/download.png",
+  },
+  {
+    tier: "Community Partner",
+    name: "Damodar Valley Corporation",
+    logo: "/images/dvc.webp",
+  },
+  {
+    tier: "Knowledge Partner",
+    name: "STPI",
+    logo: "/images/stpi.webp",
+  },
+];
 const SponsorSection = () => {
   return (
     <section className="py-24 px-6 relative font-sans overflow-hidden">
@@ -73,26 +100,42 @@ const SponsorSection = () => {
           </div>
         </div> */}
 
-        {/* Secondary Sponsors Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-          {sponsors.map((sponsor, index) => (
-            <div
-              key={index}
-              className="group bg-white/3 border border-white/5 hover:border-accent-500/40 rounded-xl p-4 flex flex-col items-center transition-all duration-500 hover:bg-white/5"
-            >
-              <span className="text-[9px] font-bold tracking-widest text-gray-500 uppercase mb-4">
-                {sponsor.tier}
-              </span>
-              <Image
-                src={sponsor.logo}
-                alt={sponsor.name}
-                width={160}
-                height={160}
-                className="h-20 object-contain transition-all duration-500 scale-95 group-hover:scale-100"
-              />
-            </div>
-          ))}
-        </div>
+     {/* Perfect Circular Sponsor Layout */}
+<div className="flex flex-wrap justify-center gap-20 mt-20">
+
+  {sponsors.map((sponsor, index) => (
+    <div
+      key={index}
+      className="group flex flex-col items-center"
+    >
+      
+      {/* Perfect Circle */}
+      <div
+        className="relative w-52 h-52 
+                   flex items-center justify-center 
+                   rounded-full 
+                   bg-white 
+                   transition-all duration-500 
+                   group-hover:scale-105"
+      >
+        <Image
+          src={sponsor.logo}
+          alt={sponsor.name}
+          fill
+          sizes="208px"
+          className="object-contain p-10"
+        />
+      </div>
+
+      {/* Sponsor Name */}
+      <p className="mt-6 text-white text-lg font-semibold text-center">
+        {sponsor.name}
+      </p>
+
+    </div>
+  ))}
+
+</div>
       </div>
     </section>
   );
