@@ -42,7 +42,7 @@ const facultyMembers = [
     image: "/team/kashif.webp",
   },
   {
-    name: "Sarah Kumala",
+    name: "Md Izhar Hussain",
     role: "VP of Customer Success",
     image: "/team/fac.webp",
   },
@@ -388,6 +388,18 @@ const coordinators = [
       mail: "mailto:tanishq.iic@bitsindri.ac.in",
     },
   },
+    {
+        name: "Mantasha Fatima",
+        role: "Editorial",
+        image: "/team/mantasha.png",
+        socials: {
+            linkedin:
+                "https://www.linkedin.com/in/mantasha-fatima-b9016b346?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+            instagram:
+                "https://www.instagram.com/_._mantu?igsh=MWQ3dHJndDQzeDJ4dQ==",
+            mail: "mailto:mantasha1509@gmail.com",
+        },
+    },
   {
     name: "Anish Kumar",
     role: "Operations",
@@ -517,6 +529,7 @@ const coordinators = [
       mail: "mailto:k6404019@gmail.com",
     },
   },
+
   {
     name: "Ankit Kumar",
     role: "Innovation Program",

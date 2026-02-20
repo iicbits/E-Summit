@@ -125,11 +125,11 @@ const Footer = () => {
               >
                 <div className="flex items-center gap-2">
                   <Mail size={14} className="font-bold" />
-                  <p>iic@bitsindri.ac.in</p>
+                  <p>esummit@bitsindri.ac.in</p>
                 </div>
               </a>
               <a
-                href="mailto:iic@bitsindri.ac.in"
+                href="mailto:esummit@bitsindri.ac.in"
                 className="text-gray-300 hover:text-white transition-colors text-sm"
               >
                 <div className="flex items-center gap-2">
