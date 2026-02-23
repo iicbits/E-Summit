@@ -13,7 +13,7 @@ const facultyMembers = [
   {
     name: "Prof. Pankaj Rai",
     role: "Patron",
-    image: "/team/pankajrai.webp",
+    image: "/team/bits-d.webp",
   },
   {
     name: "Prof. Prakash Kumar",
@@ -23,24 +23,24 @@ const facultyMembers = [
   {
     name: "Dr. S C Dutta",
     role: "Secretary",
-    image: "/team/sc.webp",
+    image: "/team/SCdatta.webp",
   },
   { name: "Dr. Rahul Kumar", role: "Co-Convener", image: "/team/rahul.webp" },
   { name: "Prof. R.K. Verma", role: "Co-Convener", image: "/team/rahul.webp" },
   {
     name: "Dr. Mukesh Chandra",
     role: "Faculty Coordinator",
-    image: "/team/mukesh.webp",
+    image: "/team/mukeshC.webp",
   },
   {
     name: "Mr. Khustar Ansari",
     role: "Faculty Coordinator",
-    image: "/team/khustar.webp",
+    image: "/team/khustarA.webp",
   },
   {
     name: "Mr. Sanjay Pal",
     role: "Faculty Coordinator",
-    image: "/team/fac.webp",
+    image: "/team/sanjay_pal.webp",
   },
   {
     name: "Mr. Vijay Kr. Besra",
@@ -50,7 +50,7 @@ const facultyMembers = [
   {
     name: "Mr. Izhar Hussain",
     role: "Faculty Coordinator",
-    image: "/team/mam.webp",
+    image: "/team/izhar.webp",
   },
   {
     name: "Dr. Priyanka Kumari",
@@ -65,7 +65,7 @@ const facultyMembers = [
   {
     name: "Mr. Sanjay Oraon",
     role: "Faculty Coordinator",
-    image: "/team/sanjay.webp",
+    image: "/team/sanjayO.webp",
   },
   {
     name: "Dr. Abhijeet Anand",
@@ -85,7 +85,7 @@ const facultyMembers = [
   {
     name: "Ms. Meenu Manjari",
     role: "Faculty Coordinator",
-    image: "/team/abhijit.webp",
+    image: "/team/minu_manjari.webp",
   },
 ];
 
