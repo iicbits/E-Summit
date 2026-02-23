@@ -52,7 +52,7 @@ const SponsorSection = () => {
 
           {/* Heading */}
           <h2 className="text-4xl md:text-5xl font-bold text-white">
-            Our Past<span className="text-accent-400"> Sponsors</span>
+            Supported By<span className="text-accent-400"> Industries</span>
           </h2>
         </div>
 
