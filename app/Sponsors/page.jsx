@@ -6,25 +6,24 @@ import Image from "next/image";
 
 const sponsors = [
   {
-    name: "ABC Corporation",
-    type: "Title Sponsor",
-    image: "/images/apple.png",
+    name: "Unstop",
+    type: "Platform Partner",
+    image: "/images/Unstop.webp",
     color: "from-purple-600 via-fuchsia-500 to-indigo-500",
   },
   {
-    name: "TechNova",
-    type: "Gold Sponsor",
-    image: "/images/nvidia.png",
+    name: "Jharkhand Entrepreneurs Association",
+    type: "Official Startup Co-Partner",
+    image: "/images/jeasponser.webp",
     color: "from-indigo-600 via-purple-500 to-blue-500",
-  },
-  {
-    name: "Foodies Hub",
-    type: "Food Sponsor",
-    image: "/images/swiggy(1).png",
-    color: "from-violet-600 via-purple-500 to-fuchsia-500",
   },
 
   /* 🔥 COMING SOON SPONSORS */
+  {
+    name: "Revealing Soon",
+    type: "Food Sponsor",
+    comingSoon: true,
+  },
   {
     name: "Revealing Soon",
     type: "Platinum Sponsor",
