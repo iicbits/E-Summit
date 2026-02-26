@@ -4,10 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [activeItem, setActiveItem] = useState("");
+  const [scrolled, setScrolled] = useState(false);
+  const [hovered, setHovered] = useState(null);
 
   const navItems = [
     { name: "Events", href: "/Events" },
@@ -16,11 +20,15 @@ const Navbar = () => {
     { name: "Team", href: "/Team" },
   ];
 
-  const pathname = usePathname();
+  const mobileNavItems = [
+    { name: "Home", href: "/" },
+    { name: "Events", href: "/Events" },
+    { name: "Speakers", href: "/Speakers" },
+    { name: "Sponsors", href: "/Sponsors" },
+    { name: "Team", href: "/Team" },
+  ];
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  const pathname = usePathname();
 
   useEffect(() => {
     const currentItem = navItems.find((item) => pathname.startsWith(item.href));
@@ -31,118 +39,154 @@ const Navbar = () => {
     }
   }, [pathname]);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 20);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
-    <header className="absolute w-full font-kiona! z-50 md:py-4 ">
-      <div className="pr-8 md:px-16 flex justify-between items-center relative">
-        <div className="flex items-center justify-center py-4">
-          <Link href="/">
+    <nav
+      className={`absolute md:fixed top-0 left-0 right-0 z-50 flex justify-center transition-all duration-500 font-kiona!`}
+    >
+      <div
+        className={`relative w-full max-w-full flex items-center justify-between px-2 md:px-10 transition-all duration-500 md:backdrop-blur-2xl py-4`}
+      >
+        <Link
+          href="/"
+          onClick={(e) => {
+            if (pathname === "/") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+              window.history.pushState(null, "", "/");
+            }
+          }}
+          className="flex items-center z-50 relative"
+        >
+          <div className="h-12 md:h-15 w-auto relative">
             <Image
               src="/images/E-SUMMIT-06.webp"
               alt="Logo"
               width={180}
-              height={180}
-              className="w-36 md:w-52 h-auto"
+              height={60}
+              className="h-full w-auto object-contain"
             />
-          </Link>
-        </div>
+          </div>
+        </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {navItems.map((item, index) => (
+        {/* Desktop Nav Links */}
+        <div
+          className="hidden md:flex items-center justify-between w-100 h-12.5"
+          onMouseLeave={() => setHovered(null)}
+        >
+          {navItems.map((item) => (
             <Link
-              key={index}
+              key={item.name}
               href={item.href}
-              className={`transition-all duration-300 ${
-                activeItem === item.name
-                  ? "text-accent-100"
-                  : "hover:text-accent-100"
-              }`}
+              onMouseEnter={() => setHovered(item.name)}
+              className="relative px-4 py-2 text-[16px] transition-colors rounded-md"
             >
-              {item.name}
+              {hovered === item.name && (
+                <motion.span
+                  layoutId="nav-hover"
+                  className="absolute inset-0 bg-purple-500/10 rounded-3xl"
+                  transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+                />
+              )}
+              <span
+                className={`relative px-2 z-10 flex justify-center items-center transition-colors duration-200 ${
+                  activeItem === item.name
+                    ? "text-accent-100"
+                    : hovered === item.name
+                      ? "text-accent-300"
+                      : "text-white"
+                }`}
+              >
+                {item.name}
+              </span>
             </Link>
           ))}
-        </nav>
+        </div>
 
-        <div className="flex gap-4">
-          {/* Desktop Contact Button */}
+        <div className="hidden md:flex items-center gap-2.5">
           <Link
             href="/"
-            className={`hidden md:block px-4 py-2 border-2 border-accent-500 rounded-xl text-sm transition-colors duration-300 hover:bg-accent-100/20`}
+            className="flex items-center justify-center px-4 py-2 rounded-3xl bg-transparent text-white text-[15px] font-medium border border-purple-400/30 hover:bg-purple-500/20 transition-all"
           >
             Tickets
           </Link>
+
           <Link
-            href="/#footer"
-            className={`hidden md:block px-4 py-2 border-2 border-accent-500 rounded-xl text-sm transition-colors duration-300 text-white -bg-conic-240 bg-accent-500 hover:bg-accent-500`}
+            href="/Contact"
+            className="flex items-center justify-center px-4 py-2 rounded-3xl bg-accent-800 text-white text-[15px] border border-white/10 hover:bg-accent-800/60 transition-all cursor-pointer"
           >
             Contact
           </Link>
         </div>
 
-        {/* Mobile Menu Button */}
+        {/* Mobile View */}
         <button
-          onClick={toggleMenu}
-          className="md:hidden flex flex-col justify-center items-center w-8 h-8 space-y-1"
+          className="md:hidden z-50 text-white p-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
           aria-label="Toggle menu"
         >
-          <span
-            className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
-              isMenuOpen ? "rotate-45 translate-y-1.5" : ""
-            }`}
-          ></span>
-          <span
-            className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
-              isMenuOpen ? "opacity-0" : ""
-            }`}
-          ></span>
-          <span
-            className={`block w-6 h-0.5 bg-foreground transition-all duration-300 ${
-              isMenuOpen ? "-rotate-45 -translate-y-1.5" : ""
-            }`}
-          ></span>
+          {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Mobile Menu */}
-        <div
-          className={`md:hidden absolute z-50 backdrop-blur-2xl top-full left-0 right-0 transition-all duration-300 overflow-hidden ${
-            isMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
-          }`}
-        >
-          <nav className="flex flex-col justify-center items-center py-4">
-            {navItems.map((item, index) => (
-              <Link
-                key={index}
-                href={item.href}
-                onClick={() => setIsMenuOpen(false)}
-                className={`px-8 py-3 text-accent-100 transition-all duration-300 ${
-                  activeItem === item.name
-                    ? "text-accent-100"
-                    : "hover:text-accent-200 hover:bg-accent-800"
-                }`}
+        <AnimatePresence>
+          {isMenuOpen && (
+            <motion.div
+              initial={{ opacity: 0, height: 0 }}
+              animate={{ opacity: 1, height: "100vh" }}
+              exit={{ opacity: 0, height: 0 }}
+              transition={{ duration: 0.4, ease: [0.22, 1, 0.36, 1] }}
+              className="absolute top-0 left-0 w-full backdrop-blur-2xl flex flex-col items-center justify-center gap-8 md:hidden overflow-hidden"
+            >
+              <div className="flex flex-col items-center gap-6">
+                {mobileNavItems.map((item, index) => (
+                  <motion.div
+                    key={item.name}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.1 + index * 0.1, duration: 0.4 }}
+                  >
+                    <Link
+                      href={item.href}
+                      className="text-xl font-bold text-white/70 hover:text-white transition-colors"
+                      onClick={() => setIsMenuOpen(false)}
+                    >
+                      {item.name}
+                    </Link>
+                  </motion.div>
+                ))}
+              </div>
+
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.6, duration: 0.4 }}
+                className="flex flex-col gap-4 mt-8 w-64"
               >
-                {item.name}
-              </Link>
-            ))}
-            <div className="flex gap-2 mt-4">
-              <Link
-                href="/"
-                onClick={() => setIsMenuOpen(false)}
-                className={`px-4 py-2 border border-accent-700 rounded-xl text-sm text-center transition-colors duration-300 hover:bg-accent-100/20`}
-              >
-                Tickets
-              </Link>
-              <Link
-                href="/#footer"
-                onClick={() => setIsMenuOpen(false)}
-                className={`px-4 py-2 border border-accent-700 rounded-xl text-sm text-center transition-colors duration-300 text-white bg-accent-600 hover:bg-accent-500`}
-              >
-                Contact
-              </Link>
-            </div>
-          </nav>
-        </div>
+                <a
+                  href="/"
+                  className="flex items-center justify-center px-4 py-2 rounded-3xl  text-white text-[15px] border border-accent-400/70 hover:bg-accent-800/60 transition-all cursor-pointer"
+                >
+                  Tickets
+                </a>
+                <a
+                  href="/Contact"
+                  className="flex items-center justify-center px-4 py-2 rounded-3xl bg-accent-800 text-white text-[15px] border border-white/10 hover:bg-accent-800/60 transition-all cursor-pointer"
+                >
+                  Contact Us
+                </a>
+              </motion.div>
+            </motion.div>
+          )}
+        </AnimatePresence>
       </div>
-    </header>
+    </nav>
   );
 };
 

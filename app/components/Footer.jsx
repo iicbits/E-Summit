@@ -29,7 +29,7 @@ const Footer = () => {
               <div className="h-8 w-px bg-gray-400"></div>
               <div className="h-8 w-auto flex items-center">
                 <a
-                  href="https://iic.bitsindri.ac.in/"
+                  href="https://iicbits@bitsindri.ac.in/"
                   alt="IIC BIT Sindri"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -125,11 +125,11 @@ const Footer = () => {
               >
                 <div className="flex items-center gap-2">
                   <Mail size={14} className="font-bold" />
-                  <p>iic@bitsindri.ac.in</p>
+                  <p>esummit@bitsindri.ac.in</p>
                 </div>
               </a>
               <a
-                href="mailto:iic@bitsindri.ac.in"
+                href="mailto:esummit@bitsindri.ac.in"
                 className="text-gray-300 hover:text-white transition-colors text-sm"
               >
                 <div className="flex items-center gap-2">

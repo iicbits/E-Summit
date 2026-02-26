@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import LenisProvider from "./components/LenisProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -101,9 +102,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} ${kiona.variable} ${rubik.variable} antialiased`}
       >
-        <Navbar />
-        {children}
-        <Footer />
+        <LenisProvider>
+          <Navbar />
+          {children}
+          <Footer />
+        </LenisProvider>
         <Analytics />
         <SpeedInsights />
       </body>
